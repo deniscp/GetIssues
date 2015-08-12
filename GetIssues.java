@@ -7,15 +7,26 @@ import java.util.Map;
 import javax.net.ssl.HttpsURLConnection;
 import java.net.URL;
 import java.net.SocketTimeoutException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.sql.PreparedStatement;
 
 public class GetIssues
 {
     private String url;
     private GregorianCalendar date;
+    private int numIssues;
+    private PreparedStatement pstmt;
+    private Connection dbCon;
     
     GetIssues(String url,GregorianCalendar date){
 	this.url=url;
 	this.date=date;
+	this.numIssues=0;
+	this.pstmt=null;
+	this.dbCon=null;
     }
 
     String get(String targetURL)
@@ -236,6 +247,17 @@ public class GetIssues
 	    else
 		System.out.println("Il repository \""+repoName+"\" non ha issues associati.");
 	}
+
+	try{
+	    if(pstmt!=null){
+		pstmt.close(); pstmt=null;}
+
+	    if(dbCon!=null){
+		dbCon.close(); dbCon=null;}
+	}
+	catch(SQLException ex){
+	    System.err.println("SQLException: "+ex.getMessage());
+	}
     }
 
     void printIssues(String repoName, String url)
@@ -295,6 +317,34 @@ public class GetIssues
 	    if(state_value.equals("open") && this.date.compareTo(date)<=0)
 	    {
 		j++;
+		numIssues++;
+
+		if(numIssues==1)
+		{
+		    openDB();
+		    try{
+			pstmt=dbCon.prepareStatement("INSERT INTO Issues "+
+				"VALUES (?,?,?,?,?)");
+		    }
+		    catch(SQLException ex){
+			System.err.println("SQLException: "+ex.getMessage()+"\nDatabase access error occurred");
+			System.exit(1);
+		    }
+		}
+
+		try{
+		    pstmt.setString(1,repoName);
+		    pstmt.setInt(2,Integer.parseInt(number_value));
+		    pstmt.setDate(3,new java.sql.Date( date.getTime().getTime() ));
+		    pstmt.setString(4,state_value);
+		    pstmt.setString(5,issues[i]);
+		    pstmt.executeUpdate();
+		}
+		catch(SQLException ex){
+		    System.err.println("SQLException: "+ex.getMessage()+"\nErrore durante l'inserimento dei dati");
+		}
+
+
 		if(j==1)
 		{
 		    dir=new File(repoName);
@@ -321,5 +371,54 @@ public class GetIssues
 	    }
 	}
 	System.out.println("\n Issues aperti e antecedenti alla data passata in input: "+j+'/'+issues.length+"\n--------------------------------------\n\n");
+    }
+
+    void openDB()
+    {
+	String username;
+	String password;
+	String dbUrl;
+	Statement stmt=null;
+
+	username="postgres";
+	password="postgres";
+	dbUrl="jdbc:postgresql://localhost:5432/GetIssues";
+	
+	try{
+	    //Required to manually load any drivers prior to JDBC 4.0
+	    //Class.forName("org.postgresql.Driver");
+	    dbCon=DriverManager.getConnection(dbUrl,username,password);
+	    stmt = dbCon.createStatement();
+	    stmt.executeUpdate("DROP TABLE IF EXISTS Issues");
+	    stmt.executeUpdate("CREATE TABLE Issues" +
+		    "(Full_Name varchar(50) NOT NULL, " +
+		    "Number integer NOT NULL, " +
+		    "Created_at date NOT NULL, " +
+		    "State varchar(5) NOT NULL, " +
+		    "Issue text NOT NULL, " +
+		    "PRIMARY KEY (Full_Name,Number))");
+	}
+	/*
+	catch(ClassNotFoundException ex){
+	    System.err.println("ClassNotFoundException: "+ex.getMessage());
+	    System.err.println("Driver jdbc non trovato");
+	    System.exit(1);
+	}
+	*/
+	catch(SQLException ex){
+	    System.err.println("SQLException: "+ex.getMessage());
+	    System.err.println("Accesso al database non riuscito");
+	    System.exit(1);
+	}
+	finally{
+	    if(stmt!=null)
+		try{stmt.close();}
+	    	catch(SQLException ex)
+	    	{
+		    System.err.println("SQLException: "+ex.getMessage());
+		}
+	}
+
+	System.err.println("Accesso al DB effettuato correttamente e tabella Issues creata");
     }
 }//End of Class GetIssues
