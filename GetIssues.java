@@ -267,9 +267,10 @@ public class GetIssues
 	GregorianCalendar date=new GregorianCalendar();
 	int i,j;
 	final String state="\"state\":";
+	final String login="\"login\":";
 	final String created_at="\"created_at\":";
 	final String number="\"number\":";
-	String state_value,created_at_value,number_value;
+	String state_value,login_value,created_at_value,number_value;
 	String issueName;
 	int beginIndex,endIndex;
 	File dir=null;
@@ -289,6 +290,13 @@ public class GetIssues
 	    beginIndex++;
 	    endIndex=beginIndex+"open".length();
 	    state_value=issues[i].substring( beginIndex, endIndex );
+
+	    //Leggo il campo "login": dell' issue[i]
+	    beginIndex=issues[i].indexOf(login)+login.length();
+	    for( ; issues[i].charAt(beginIndex)!='"' ; beginIndex++);
+	    beginIndex++;
+	    for(endIndex=beginIndex;issues[i].charAt(endIndex)!='"';endIndex++);
+	    login_value=issues[i].substring( beginIndex, endIndex );
 
 	    //Leggo il campo "number": dell' issue[i]
 	    beginIndex=issues[i].indexOf(number)+number.length();
@@ -324,7 +332,7 @@ public class GetIssues
 		    openDB();
 		    try{
 			pstmt=dbCon.prepareStatement("INSERT INTO Issues "+
-				"VALUES (?,?,?,?,?)");
+				"VALUES (?,?,?,?,?,?)");
 		    }
 		    catch(SQLException ex){
 			System.err.println("SQLException: "+ex.getMessage()+"\nDatabase access error occurred");
@@ -336,8 +344,9 @@ public class GetIssues
 		    pstmt.setString(1,repoName);
 		    pstmt.setInt(2,Integer.parseInt(number_value));
 		    pstmt.setDate(3,new java.sql.Date( date.getTime().getTime() ));
-		    pstmt.setString(4,state_value);
-		    pstmt.setString(5,issues[i]);
+		    pstmt.setString(4,login_value);
+		    pstmt.setString(5,state_value);
+		    pstmt.setString(6,issues[i]);
 		    pstmt.executeUpdate();
 		}
 		catch(SQLException ex){
@@ -394,6 +403,7 @@ public class GetIssues
 		    "(Full_Name varchar(50) NOT NULL, " +
 		    "Number integer NOT NULL, " +
 		    "Created_at date NOT NULL, " +
+		    "Created_by varchar(50) NOT NULL, " +
 		    "State varchar(5) NOT NULL, " +
 		    "Issue text NOT NULL, " +
 		    "PRIMARY KEY (Full_Name,Number))");
