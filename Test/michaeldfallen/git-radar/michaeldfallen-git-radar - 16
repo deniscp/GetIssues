@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/16",
+    "labels_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/16/labels{/name}",
+    "comments_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/16/comments",
+    "events_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/16/events",
+    "html_url": "https://github.com/michaeldfallen/git-radar/issues/16",
+    "id": 103323828,
+    "number": 16,
+    "title": "nohup redirection is presented with every prompt.",
+    "user": {
+      "login": "dbrowne",
+      "id": 2193605,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2193605?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbrowne",
+      "html_url": "https://github.com/dbrowne",
+      "followers_url": "https://api.github.com/users/dbrowne/followers",
+      "following_url": "https://api.github.com/users/dbrowne/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbrowne/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbrowne/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbrowne/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbrowne/orgs",
+      "repos_url": "https://api.github.com/users/dbrowne/repos",
+      "events_url": "https://api.github.com/users/dbrowne/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbrowne/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2015-08-26T17:21:24Z",
+    "updated_at": "2015-08-26T20:12:24Z",
+    "closed_at": null,
+    "body": "This is a quick fix: line 80 of git-radar\r\nnohup $dot/fetch.sh 2>/dev/null &\r\n\r\nRedirecting stderr "
+  

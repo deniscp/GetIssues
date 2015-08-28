@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/octokit/octokit.objc/issues/274",
+    "labels_url": "https://api.github.com/repos/octokit/octokit.objc/issues/274/labels{/name}",
+    "comments_url": "https://api.github.com/repos/octokit/octokit.objc/issues/274/comments",
+    "events_url": "https://api.github.com/repos/octokit/octokit.objc/issues/274/events",
+    "html_url": "https://github.com/octokit/octokit.objc/issues/274",
+    "id": 101871250,
+    "number": 274,
+    "title": "Missing Attributes e.G. in gists",
+    "user": {
+      "login": "paxos",
+      "id": 121539,
+      "avatar_url": "https://avatars.githubusercontent.com/u/121539?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/paxos",
+      "html_url": "https://github.com/paxos",
+      "followers_url": "https://api.github.com/users/paxos/followers",
+      "following_url": "https://api.github.com/users/paxos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/paxos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/paxos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/paxos/subscriptions",
+      "organizations_url": "https://api.github.com/users/paxos/orgs",
+      "repos_url": "https://api.github.com/users/paxos/repos",
+      "events_url": "https://api.github.com/users/paxos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/paxos/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-19T11:35:40Z",
+    "updated_at": "2015-08-19T11:35:40Z",
+    "closed_at": null,
+    "body": "I noticed that most of the attributes that the API returns are ignored as the model does not have matching attributes for it. Why is that?\r\n\r\nSo I just wonder: What is the suggest approach to work with this framework?\r\nFork and add required attributes to the model itself?"
+  

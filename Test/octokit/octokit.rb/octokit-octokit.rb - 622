@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/octokit/octokit.rb/issues/622",
+    "labels_url": "https://api.github.com/repos/octokit/octokit.rb/issues/622/labels{/name}",
+    "comments_url": "https://api.github.com/repos/octokit/octokit.rb/issues/622/comments",
+    "events_url": "https://api.github.com/repos/octokit/octokit.rb/issues/622/events",
+    "html_url": "https://github.com/octokit/octokit.rb/issues/622",
+    "id": 93167386,
+    "number": 622,
+    "title": "Create pull request by Octokit sometimes failed ",
+    "user": {
+      "login": "JuanitoFatas",
+      "id": 1000669,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1000669?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/JuanitoFatas",
+      "html_url": "https://github.com/JuanitoFatas",
+      "followers_url": "https://api.github.com/users/JuanitoFatas/followers",
+      "following_url": "https://api.github.com/users/JuanitoFatas/following{/other_user}",
+      "gists_url": "https://api.github.com/users/JuanitoFatas/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/JuanitoFatas/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/JuanitoFatas/subscriptions",
+      "organizations_url": "https://api.github.com/users/JuanitoFatas/orgs",
+      "repos_url": "https://api.github.com/users/JuanitoFatas/repos",
+      "events_url": "https://api.github.com/users/JuanitoFatas/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/JuanitoFatas/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-07-06T01:40:15Z",
+    "updated_at": "2015-07-06T01:45:35Z",
+    "closed_at": null,
+    "body": "I have a method to send pull request by Octokit:\r\n\r\n```ruby\r\ndef send_pull_request(repo_info, commit_message, title, body)\r\n  create_branch(repo_info[:full_github_name], with_head, repo_info[:master_sha])\r\n\r\n  update_contents(\r\n    repo_info[:full_github_name],\r\n    \"Gemfile.lock\",\r\n    commit_message,\r\n    repo_info[:file_sha],\r\n    repo_info[:file_content],\r\n    branch: branch_name\r\n  )\r\n\r\n  create_pull_request(\r\n    repo_info[:full_github_name],\r\n    \"master\",\r\n    branch_name,\r\n    title,\r\n    body\r\n  )\r\nend\r\n```\r\n\r\n`repo_info` looks like this (fake data):\r\n\r\n```ruby\r\n{\r\n  full_github_name: \"foo/bar\",\r\n  master_sha: \"7638417db6d59f3c431d3e1f261cc637155684cd\",\r\n  file_sha: \"95b966ae1c166bd92f8ae7d1c313e738c731dfc3\",\r\n  file_content: \"changed\",\r\n}\r\n```\r\n\r\nIt works really well but intermittently I saw errors like:\r\n\r\n- POST 404 with refs API\r\n\r\n  ```\r\n  POST https://api.github.com/repos/foo/bar/git/refs: 404 -\r\n  Not Found // See: https://developer.github.com/v3/git/refs/#create-a-reference\r\n  lib/octokit/github_client/dsl.rb:4:in `create_branch'\r\n  ```\r\n\r\n- No commits between master and newly-created-branch\r\n\r\n  ```\r\n  POST https://api.github.com/repos/foo/bar/pulls: 422 - Validation Failed\r\n  Error summary:\r\n    resource: PullRequest\r\n    code: custom\r\n    message: No commits between master and newly-created-branch\r\n  // See: https://developer.github.com/v3/pulls/#create-a-pull-request\r\n  lib/octokit/github_client.rb:14:in `create_pull_request'\r\n  ```\r\n\r\nAnything wrong with my setup? Any way can my `send_pull_request` method to be improved?\r\n\r\nThanks in advance!"
+  

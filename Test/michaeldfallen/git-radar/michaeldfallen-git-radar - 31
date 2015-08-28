@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/31",
+    "labels_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/31/labels{/name}",
+    "comments_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/31/comments",
+    "events_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/31/events",
+    "html_url": "https://github.com/michaeldfallen/git-radar/issues/31",
+    "id": 103621975,
+    "number": 31,
+    "title": "Show whether anything is stashed ",
+    "user": {
+      "login": "lorensr",
+      "id": 251288,
+      "avatar_url": "https://avatars.githubusercontent.com/u/251288?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lorensr",
+      "html_url": "https://github.com/lorensr",
+      "followers_url": "https://api.github.com/users/lorensr/followers",
+      "following_url": "https://api.github.com/users/lorensr/following{/other_user}",
+      "gists_url": "https://api.github.com/users/lorensr/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/lorensr/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/lorensr/subscriptions",
+      "organizations_url": "https://api.github.com/users/lorensr/orgs",
+      "repos_url": "https://api.github.com/users/lorensr/repos",
+      "events_url": "https://api.github.com/users/lorensr/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/lorensr/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 7,
+    "created_at": "2015-08-28T00:30:56Z",
+    "updated_at": "2015-08-28T14:32:24Z",
+    "closed_at": null,
+    "body": "Sometimes I forget that I have something stashed, and later come back to the problem and wind up rewriting things. Would be nice to see that I have something stashed. Maybe just a single character, or a number 1-9+ of how many things are stashed."
+  

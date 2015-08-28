@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/flarum/mentions/issues/8",
+    "labels_url": "https://api.github.com/repos/flarum/mentions/issues/8/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/mentions/issues/8/comments",
+    "events_url": "https://api.github.com/repos/flarum/mentions/issues/8/events",
+    "html_url": "https://github.com/flarum/mentions/issues/8",
+    "id": 103514598,
+    "number": 8,
+    "title": "Sub in usernames from database when rendering posts",
+    "user": {
+      "login": "tobscure",
+      "id": 128862,
+      "avatar_url": "https://avatars.githubusercontent.com/u/128862?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tobscure",
+      "html_url": "https://github.com/tobscure",
+      "followers_url": "https://api.github.com/users/tobscure/followers",
+      "following_url": "https://api.github.com/users/tobscure/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tobscure/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tobscure/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tobscure/subscriptions",
+      "organizations_url": "https://api.github.com/users/tobscure/orgs",
+      "repos_url": "https://api.github.com/users/tobscure/repos",
+      "events_url": "https://api.github.com/users/tobscure/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tobscure/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-27T13:51:38Z",
+    "updated_at": "2015-08-27T13:51:38Z",
+    "closed_at": null,
+    "body": "User and post mentions are stored in the database wrapped in XML tags with attributes for the referenced post/user ID. However, currently whatever the user originally wrote as the username is still rendered. This is not ideal because when a user's username is changed, mentions will still refer to their old username.\r\n\r\nInstead, at render time, we should pull the ID attributes out of the mention tags, fetch the latest usernames, and sub them into the mentions.\r\n\r\nWhat needs to be done: \r\n\r\n* Eager load all mentioned users/posts when fetching a post or list of posts. Since we already store a database map of which posts mention what (in the `mentions_posts` and `mentions_users` tables), we can probably use the WillSerializeData event for actions that list posts to load the `mentionsUsers`, `mentionsPosts`, and `mentionsPosts.user` relationships onto the data.\r\n* Use the FormatterRenderer event to sub in the username data which we have eager loaded. We can use [this TextFormatter API](http://s9e.github.io/TextFormatter/api/s9e/TextFormatter/Utils.html#method_replaceAttributes)."
+  

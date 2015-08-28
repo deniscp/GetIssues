@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/flarum/pusher/issues/1",
+    "labels_url": "https://api.github.com/repos/flarum/pusher/issues/1/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/pusher/issues/1/comments",
+    "events_url": "https://api.github.com/repos/flarum/pusher/issues/1/events",
+    "html_url": "https://github.com/flarum/pusher/issues/1",
+    "id": 103514408,
+    "number": 1,
+    "title": "Rewrite the whole thing",
+    "user": {
+      "login": "tobscure",
+      "id": 128862,
+      "avatar_url": "https://avatars.githubusercontent.com/u/128862?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tobscure",
+      "html_url": "https://github.com/tobscure",
+      "followers_url": "https://api.github.com/users/tobscure/followers",
+      "following_url": "https://api.github.com/users/tobscure/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tobscure/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tobscure/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tobscure/subscriptions",
+      "organizations_url": "https://api.github.com/users/tobscure/orgs",
+      "repos_url": "https://api.github.com/users/tobscure/repos",
+      "events_url": "https://api.github.com/users/tobscure/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tobscure/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-27T13:51:02Z",
+    "updated_at": "2015-08-27T13:51:02Z",
+    "closed_at": null,
+    "body": "I threw this extension together in a night without much thought, because I wanted to get the beta out the door :P\r\n\r\nWhile it does the basics OK (update the discussion list, push new posts, and update the unread notifications count), it could be way better. And it's a mess and basically needs to be rewritten. Anyway, here's how I think it should be improved:\r\n\r\n* Extract a lot of the code into core, so that the extension is effectively telling core \"hey I just found out about this new post in this discussion – whatchu gunna do about it?\" and then core shows the \"1 updated discussions\" button or updates the post stream or whatever. This will allow us to write other extensions for different push services without duplicating/having inconsistent implementations.\r\n* Make it push more information about the discussion that was updated, so that we can check whether we already have the most up-to-date information, and don't have to extend `addDiscussion`.\r\n* Don't say there are updated discussions if they are in a hidden tag\r\n* Push to a user whenever they read notifications, so that the number of unread notifications stays in sync between browser windows.\r\n* Push for discussion events (e.g. discussion renaming)\r\n* Push for post likes\r\n* Show a little bubble every time a notification is received (again, this is something that would probably belong in core)\r\n* Push user online status (via presence channels? idk)\r\n\r\nWhat needs to be done:\r\n\r\n* Working out a plan of attack for that first bullet point is the most important thing.\r\n* Reimplement the current basic features in a cleaner way.\r\n* Create issues for the additional features."
+  

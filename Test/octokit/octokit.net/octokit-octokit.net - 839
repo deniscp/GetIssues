@@ -1,0 +1,63 @@
+
+    "url": "https://api.github.com/repos/octokit/octokit.net/issues/839",
+    "labels_url": "https://api.github.com/repos/octokit/octokit.net/issues/839/labels{/name}",
+    "comments_url": "https://api.github.com/repos/octokit/octokit.net/issues/839/comments",
+    "events_url": "https://api.github.com/repos/octokit/octokit.net/issues/839/events",
+    "html_url": "https://github.com/octokit/octokit.net/issues/839",
+    "id": 95866428,
+    "number": 839,
+    "title": "searching issues - no option for \"merged\"",
+    "user": {
+      "login": "shiftkey",
+      "id": 359239,
+      "avatar_url": "https://avatars.githubusercontent.com/u/359239?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/shiftkey",
+      "html_url": "https://github.com/shiftkey",
+      "followers_url": "https://api.github.com/users/shiftkey/followers",
+      "following_url": "https://api.github.com/users/shiftkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/shiftkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/shiftkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/shiftkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/shiftkey/orgs",
+      "repos_url": "https://api.github.com/users/shiftkey/repos",
+      "events_url": "https://api.github.com/users/shiftkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/shiftkey/received_events",
+      "type": "User",
+      "site_admin": true
+    },
+    "labels": [
+      {
+        "url": "https://api.github.com/repos/octokit/octokit.net/labels/easy-fix",
+        "name": "easy-fix",
+        "color": "009800"
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": {
+      "login": "shiftkey",
+      "id": 359239,
+      "avatar_url": "https://avatars.githubusercontent.com/u/359239?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/shiftkey",
+      "html_url": "https://github.com/shiftkey",
+      "followers_url": "https://api.github.com/users/shiftkey/followers",
+      "following_url": "https://api.github.com/users/shiftkey/following{/other_user}",
+      "gists_url": "https://api.github.com/users/shiftkey/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/shiftkey/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/shiftkey/subscriptions",
+      "organizations_url": "https://api.github.com/users/shiftkey/orgs",
+      "repos_url": "https://api.github.com/users/shiftkey/repos",
+      "events_url": "https://api.github.com/users/shiftkey/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/shiftkey/received_events",
+      "type": "User",
+      "site_admin": true
+    },
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-07-18T23:03:34Z",
+    "updated_at": "2015-08-25T00:58:05Z",
+    "closed_at": null,
+    "body": "Can filter when the PR was merged:\r\n\r\n> https://help.github.com/articles/searching-issues/#search-based-on-when-a-pull-request-was-merged\r\n\r\nUses our existing DateRange syntax:\r\n\r\n```\r\nmerged:<2011-01-01\r\nmerged:>=2014-05-01\r\n```"
+  

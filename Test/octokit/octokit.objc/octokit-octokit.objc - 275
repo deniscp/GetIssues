@@ -1,0 +1,47 @@
+
+    "url": "https://api.github.com/repos/octokit/octokit.objc/issues/275",
+    "labels_url": "https://api.github.com/repos/octokit/octokit.objc/issues/275/labels{/name}",
+    "comments_url": "https://api.github.com/repos/octokit/octokit.objc/issues/275/comments",
+    "events_url": "https://api.github.com/repos/octokit/octokit.objc/issues/275/events",
+    "html_url": "https://github.com/octokit/octokit.objc/pull/275",
+    "id": 102413943,
+    "number": 275,
+    "title": "iOS Dependencies",
+    "user": {
+      "login": "phatblat",
+      "id": 28851,
+      "avatar_url": "https://avatars.githubusercontent.com/u/28851?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/phatblat",
+      "html_url": "https://github.com/phatblat",
+      "followers_url": "https://api.github.com/users/phatblat/followers",
+      "following_url": "https://api.github.com/users/phatblat/following{/other_user}",
+      "gists_url": "https://api.github.com/users/phatblat/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/phatblat/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/phatblat/subscriptions",
+      "organizations_url": "https://api.github.com/users/phatblat/orgs",
+      "repos_url": "https://api.github.com/users/phatblat/repos",
+      "events_url": "https://api.github.com/users/phatblat/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/phatblat/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-21T16:20:14Z",
+    "updated_at": "2015-08-21T16:20:14Z",
+    "closed_at": null,
+    "pull_request": {
+      "url": "https://api.github.com/repos/octokit/octokit.objc/pulls/275",
+      "html_url": "https://github.com/octokit/octokit.objc/pull/275",
+      "diff_url": "https://github.com/octokit/octokit.objc/pull/275.diff",
+      "patch_url": "https://github.com/octokit/octokit.objc/pull/275.patch"
+    },
+    "body": "Add AFNetworking and ISO8601DateFormatter as dependencies of iOS target. Without this, building OctoKit with Carthage for iOS never generates the frameworks for these dependencies."
+  

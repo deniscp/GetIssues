@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/flarum/mentions/issues/9",
+    "labels_url": "https://api.github.com/repos/flarum/mentions/issues/9/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/mentions/issues/9/comments",
+    "events_url": "https://api.github.com/repos/flarum/mentions/issues/9/events",
+    "html_url": "https://github.com/flarum/mentions/issues/9",
+    "id": 103514714,
+    "number": 9,
+    "title": "\"View conversation\" modal to view all replies that are linked to each other",
+    "user": {
+      "login": "tobscure",
+      "id": 128862,
+      "avatar_url": "https://avatars.githubusercontent.com/u/128862?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tobscure",
+      "html_url": "https://github.com/tobscure",
+      "followers_url": "https://api.github.com/users/tobscure/followers",
+      "following_url": "https://api.github.com/users/tobscure/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tobscure/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tobscure/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tobscure/subscriptions",
+      "organizations_url": "https://api.github.com/users/tobscure/orgs",
+      "repos_url": "https://api.github.com/users/tobscure/repos",
+      "events_url": "https://api.github.com/users/tobscure/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tobscure/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-27T13:51:59Z",
+    "updated_at": "2015-08-27T13:51:59Z",
+    "closed_at": null,
+    "body": "Similar to how you can view a tweet in Twitter and see all of the replies, and the replies to those replies, and so on. I want to experiment with this idea for Flarum's post mentions to see if it's viable/helpful.\r\n"
+  

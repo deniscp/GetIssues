@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/Qihoo360/DroidPlugin/issues/1",
+    "labels_url": "https://api.github.com/repos/Qihoo360/DroidPlugin/issues/1/labels{/name}",
+    "comments_url": "https://api.github.com/repos/Qihoo360/DroidPlugin/issues/1/comments",
+    "events_url": "https://api.github.com/repos/Qihoo360/DroidPlugin/issues/1/events",
+    "html_url": "https://github.com/Qihoo360/DroidPlugin/issues/1",
+    "id": 103635066,
+    "number": 1,
+    "title": " FieldUtils.writeStaticField(cls, \"gDefault\", new android.util.Singleton<Object>() ",
+    "user": {
+      "login": "dssljt",
+      "id": 11781990,
+      "avatar_url": "https://avatars.githubusercontent.com/u/11781990?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dssljt",
+      "html_url": "https://github.com/dssljt",
+      "followers_url": "https://api.github.com/users/dssljt/followers",
+      "following_url": "https://api.github.com/users/dssljt/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dssljt/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dssljt/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dssljt/subscriptions",
+      "organizations_url": "https://api.github.com/users/dssljt/orgs",
+      "repos_url": "https://api.github.com/users/dssljt/repos",
+      "events_url": "https://api.github.com/users/dssljt/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dssljt/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2015-08-28T02:36:53Z",
+    "updated_at": "2015-08-28T03:34:53Z",
+    "closed_at": null,
+    "body": "Error:(91, 74) 错误: 找不到符号\r\n符号:   类 Singleton\r\n位置: 程序包 android.util\r\n\r\n找不到这个Singleton<Object> 报错 为什么呢"
+  

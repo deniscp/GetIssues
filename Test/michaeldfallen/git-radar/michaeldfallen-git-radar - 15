@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/15",
+    "labels_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/15/labels{/name}",
+    "comments_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/15/comments",
+    "events_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/15/events",
+    "html_url": "https://github.com/michaeldfallen/git-radar/issues/15",
+    "id": 103305516,
+    "number": 15,
+    "title": "Remove the space before the output",
+    "user": {
+      "login": "eproxus",
+      "id": 112878,
+      "avatar_url": "https://avatars.githubusercontent.com/u/112878?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/eproxus",
+      "html_url": "https://github.com/eproxus",
+      "followers_url": "https://api.github.com/users/eproxus/followers",
+      "following_url": "https://api.github.com/users/eproxus/following{/other_user}",
+      "gists_url": "https://api.github.com/users/eproxus/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/eproxus/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/eproxus/subscriptions",
+      "organizations_url": "https://api.github.com/users/eproxus/orgs",
+      "repos_url": "https://api.github.com/users/eproxus/repos",
+      "events_url": "https://api.github.com/users/eproxus/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/eproxus/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2015-08-26T15:59:42Z",
+    "updated_at": "2015-08-27T08:09:28Z",
+    "closed_at": null,
+    "body": "This is a request to remove the space prefix of the output of `git-radar`. This would give more flexibility to theme builders over where the output can be placed. It would also be more consistent, because there's no padding at the end of the output."
+  

@@ -51,7 +51,6 @@ public class Test{
 
 	conn.getIssues(repos);	
 
-
 	/*
 	int openedCurl=0,closedCurl=0;
 	for(i=0;i<response.length();i++)
@@ -65,6 +64,7 @@ public class Test{
 	System.out.println("OpenedCurl: "+openedCurl+"; ClosedCurl: "+closedCurl);
 	*/
 
+	System.out.println(conn.get("https://api.github.com/rate_limit"));
 
     }//end of main
 }//end of Test class

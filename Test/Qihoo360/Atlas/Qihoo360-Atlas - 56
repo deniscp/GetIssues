@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/Qihoo360/Atlas/issues/56",
+    "labels_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/56/labels{/name}",
+    "comments_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/56/comments",
+    "events_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/56/events",
+    "html_url": "https://github.com/Qihoo360/Atlas/issues/56",
+    "id": 95181517,
+    "number": 56,
+    "title": "sharding 问题请教",
+    "user": {
+      "login": "filamoon",
+      "id": 919020,
+      "avatar_url": "https://avatars.githubusercontent.com/u/919020?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/filamoon",
+      "html_url": "https://github.com/filamoon",
+      "followers_url": "https://api.github.com/users/filamoon/followers",
+      "following_url": "https://api.github.com/users/filamoon/following{/other_user}",
+      "gists_url": "https://api.github.com/users/filamoon/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/filamoon/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/filamoon/subscriptions",
+      "organizations_url": "https://api.github.com/users/filamoon/orgs",
+      "repos_url": "https://api.github.com/users/filamoon/repos",
+      "events_url": "https://api.github.com/users/filamoon/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/filamoon/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2015-07-15T12:35:27Z",
+    "updated_at": "2015-07-25T13:22:58Z",
+    "closed_at": null,
+    "body": "我有一张非常大的表，行数超过十亿，需要进行拆分处理。假设拆分因子是100。\r\n\r\n如果采用分表，那其实这100个子表还是存在一个物理节点上，意义不大。\r\n如果采用最新的sharding功能，就需要100个物理节点，也不现实。\r\n\r\n不知是否可以同时使用 sharding 和 分表策略？例如拆分到10个物理节点，每个节点有10张子表。"
+  

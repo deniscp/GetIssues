@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/Qihoo360/phptrace/issues/37",
+    "labels_url": "https://api.github.com/repos/Qihoo360/phptrace/issues/37/labels{/name}",
+    "comments_url": "https://api.github.com/repos/Qihoo360/phptrace/issues/37/comments",
+    "events_url": "https://api.github.com/repos/Qihoo360/phptrace/issues/37/events",
+    "html_url": "https://github.com/Qihoo360/phptrace/issues/37",
+    "id": 95120325,
+    "number": 37,
+    "title": "can use phptrace to trace Trojan file running?",
+    "user": {
+      "login": "mickelfeng",
+      "id": 1442266,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1442266?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mickelfeng",
+      "html_url": "https://github.com/mickelfeng",
+      "followers_url": "https://api.github.com/users/mickelfeng/followers",
+      "following_url": "https://api.github.com/users/mickelfeng/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mickelfeng/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mickelfeng/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mickelfeng/subscriptions",
+      "organizations_url": "https://api.github.com/users/mickelfeng/orgs",
+      "repos_url": "https://api.github.com/users/mickelfeng/repos",
+      "events_url": "https://api.github.com/users/mickelfeng/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mickelfeng/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-07-15T06:45:53Z",
+    "updated_at": "2015-07-15T06:45:53Z",
+    "closed_at": null,
+    "body": "sometimes my website is hacked by somebody.  he uses Trojan file to generate so many html files .\r\nI want to use this tool to monitor the trace of Trojan file runing."
+  

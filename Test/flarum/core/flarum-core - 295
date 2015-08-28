@@ -1,0 +1,45 @@
+
+    "url": "https://api.github.com/repos/flarum/core/issues/295",
+    "labels_url": "https://api.github.com/repos/flarum/core/issues/295/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/core/issues/295/comments",
+    "events_url": "https://api.github.com/repos/flarum/core/issues/295/events",
+    "html_url": "https://github.com/flarum/core/issues/295",
+    "id": 103692808,
+    "number": 295,
+    "title": "Sometimes posts don't load correctly",
+    "user": {
+      "login": "tobscure",
+      "id": 128862,
+      "avatar_url": "https://avatars.githubusercontent.com/u/128862?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tobscure",
+      "html_url": "https://github.com/tobscure",
+      "followers_url": "https://api.github.com/users/tobscure/followers",
+      "following_url": "https://api.github.com/users/tobscure/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tobscure/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tobscure/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tobscure/subscriptions",
+      "organizations_url": "https://api.github.com/users/tobscure/orgs",
+      "repos_url": "https://api.github.com/users/tobscure/repos",
+      "events_url": "https://api.github.com/users/tobscure/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tobscure/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "url": "https://api.github.com/repos/flarum/core/labels/Bug",
+        "name": "Bug",
+        "color": "e11d21"
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-28T10:26:16Z",
+    "updated_at": "2015-08-28T10:26:16Z",
+    "closed_at": null,
+    "body": "Difficult to reproduce consistently, but often when I load the end of [this thread](http://discuss.flarum.org/d/558-flarum-beta-is-here/81) and then jump/scroll back up to the top, the first post isn't loaded correctly:\r\n\r\n![screen shot 2015-08-28 at 7 53 39 pm](https://cloud.githubusercontent.com/assets/128862/9544298/ac8ce138-4dbe-11e5-8918-acd144ce7ec5.png)\r\n\r\nPresumably this is happening because the a basic copy of the post is included in one of the subsequent reply's mentionsPosts relationships (Fastidious' reply?) and then the stream thinks it already has a copy so doesn't bother to load it fully."
+  

@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/Qihoo360/Atlas/issues/60",
+    "labels_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/60/labels{/name}",
+    "comments_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/60/comments",
+    "events_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/60/events",
+    "html_url": "https://github.com/Qihoo360/Atlas/issues/60",
+    "id": 102999414,
+    "number": 60,
+    "title": "应用日志报错：Communications link failure",
+    "user": {
+      "login": "rotmond",
+      "id": 13193067,
+      "avatar_url": "https://avatars.githubusercontent.com/u/13193067?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rotmond",
+      "html_url": "https://github.com/rotmond",
+      "followers_url": "https://api.github.com/users/rotmond/followers",
+      "following_url": "https://api.github.com/users/rotmond/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rotmond/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rotmond/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rotmond/subscriptions",
+      "organizations_url": "https://api.github.com/users/rotmond/orgs",
+      "repos_url": "https://api.github.com/users/rotmond/repos",
+      "events_url": "https://api.github.com/users/rotmond/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rotmond/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-25T10:58:43Z",
+    "updated_at": "2015-08-25T10:58:43Z",
+    "closed_at": null,
+    "body": "首先介绍一下部署架构，两套主主mysql，后续称为A&B（跑数据库1），C&D（跑数据库2），AB,CD分别通过keepalived有一个VIP，正常运行情况下，VIP在A,C上。\r\n两个atlas节点，分别起两个实例对应数据库1、2，atlas实例1配置A(vip)为主，B(真实IP)为从，atlas实例2配置C（vip）为主，D(真实IP)为从。\r\n然后两个atlas再通过keeapalived有一个VIP对外提供应用连接。\r\n\r\nOS版本：CentOS release 6.6\r\nMysql :5.6.26\r\nAltas:2.2.1\r\nkeepalived:1.2.19\r\nmysql-connector-java:5.1.35\r\n\r\n目前应用日志经常出现“Communications link failure”报错，报错如下，目前已经调整了mysql的wait_timeout & interactive_timeout,当前值为86400，但是依然报错。\r\n程序员本地通过JDBC连接导入数据时同样在较短时间内出现两次报错，请教一下有什么解决办法，或者从何入手开始进行分析？\r\n\r\nCaused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure\r\n\r\nThe last packet successfully received from the server was 4,188,244 milliseconds ago.  The last packet sent successfully to the server was 1 milliseconds ago.\r\n\tat sun.reflect.GeneratedConstructorAccessor127.newInstance(Unknown Source) ~[na:na]\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_51]\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[na:1.8.0_51]\r\n\tat com.mysql.jdbc.Util.handleNewInstance(Util.java:389) ~[mysql-connector-java-5.1.35.jar!/:5.1.35]\r\n\tat com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038) ~[mysql-connector-java-5.1.35.jar!/:5.1.35]\r\n\tat com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3422) ~[mysql-connector-java-5.1.35.jar!/:5.1.35]\r\n\tat com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3322) ~[mysql-connector-java-5.1.35.jar!/:5.1.35]\r\n\tat com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3762) ~[mysql-connector-java-5.1.35.jar!/:5.1.35]\r\n\tat com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435) ~[mysql-connector-java-5.1.35.jar!/:5.1.35]\r\n\tat com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582) ~[mysql-connector-java-5.1.35.jar!/:5.1.35]\r\n\tat com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2531) ~[mysql-connector-java-5.1.35.jar!/:5.1.35]\r\n\tat com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2489) ~[mysql-connector-java-5.1.35.jar!/:5.1.35]\r\n\tat com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:848) ~[mysql-connector-java-5.1.35.jar!/:5.1.35]\r\n\tat com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:742) ~[mysql-connector-java-5.1.35.jar!/:5.1.35]\r\n\tat com.mysql.jdbc.jdbc2.optional.MysqlXAConnection.dispatchCommand(MysqlXAConnection.java:560) ~[mysql-connector-java-5.1.35.jar!/:5.1.35]\r\n\t... 152 common frames omitted\r\nCaused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.\r\n\tat com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:2914) ~[mysql-connector-java-5.1.35.jar!/:5.1.35]\r\n\tat com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3332) ~[mysql-connector-java-5.1.35.jar!/:5.1.35]\r\n\t... 161 common frames omitted"
+  

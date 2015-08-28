@@ -1,0 +1,50 @@
+
+    "url": "https://api.github.com/repos/flarum/core/issues/272",
+    "labels_url": "https://api.github.com/repos/flarum/core/issues/272/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/core/issues/272/comments",
+    "events_url": "https://api.github.com/repos/flarum/core/issues/272/events",
+    "html_url": "https://github.com/flarum/core/issues/272",
+    "id": 103551785,
+    "number": 272,
+    "title": "[Request/Inquiry] Flat vs. Threaded Structure",
+    "user": {
+      "login": "logannc",
+      "id": 2867206,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2867206?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/logannc",
+      "html_url": "https://github.com/logannc",
+      "followers_url": "https://api.github.com/users/logannc/followers",
+      "following_url": "https://api.github.com/users/logannc/following{/other_user}",
+      "gists_url": "https://api.github.com/users/logannc/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/logannc/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/logannc/subscriptions",
+      "organizations_url": "https://api.github.com/users/logannc/orgs",
+      "repos_url": "https://api.github.com/users/logannc/repos",
+      "events_url": "https://api.github.com/users/logannc/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/logannc/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "url": "https://api.github.com/repos/flarum/core/labels/API",
+        "name": "API",
+        "color": "5319e7"
+      },
+      {
+        "url": "https://api.github.com/repos/flarum/core/labels/Needs%20Discussion",
+        "name": "Needs Discussion",
+        "color": "d4c5f9"
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2015-08-27T16:55:27Z",
+    "updated_at": "2015-08-28T03:54:08Z",
+    "closed_at": null,
+    "body": "Is there any plans to support a Threaded (tree) forum structure?\r\n\r\nIf no, would you be opposed to contributions toward supporting that?\r\n\r\nIf no again, if I decided to fork y'alls ***awesome*** work for my own threaded ends, how hard is it gunna be to adapt it?"
+  

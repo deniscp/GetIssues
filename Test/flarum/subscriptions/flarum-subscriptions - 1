@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/flarum/subscriptions/issues/1",
+    "labels_url": "https://api.github.com/repos/flarum/subscriptions/issues/1/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/subscriptions/issues/1/comments",
+    "events_url": "https://api.github.com/repos/flarum/subscriptions/issues/1/events",
+    "html_url": "https://github.com/flarum/subscriptions/issues/1",
+    "id": 97628980,
+    "number": 1,
+    "title": "User setting to automatically follow discussions you start/reply to",
+    "user": {
+      "login": "tobscure",
+      "id": 128862,
+      "avatar_url": "https://avatars.githubusercontent.com/u/128862?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tobscure",
+      "html_url": "https://github.com/tobscure",
+      "followers_url": "https://api.github.com/users/tobscure/followers",
+      "following_url": "https://api.github.com/users/tobscure/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tobscure/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tobscure/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tobscure/subscriptions",
+      "organizations_url": "https://api.github.com/users/tobscure/orgs",
+      "repos_url": "https://api.github.com/users/tobscure/repos",
+      "events_url": "https://api.github.com/users/tobscure/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tobscure/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-07-28T06:46:29Z",
+    "updated_at": "2015-08-27T13:53:49Z",
+    "closed_at": null,
+    "body": "What needs to be done:\r\n\r\n* Register a new bool preference (`followAfterReply`) using the RegisterUserPreferences event.\r\n* Extend the core SettingsPage component's `settingsItems` method to add a new child to the `notifications` fieldset. That child should be a Switch which saves the followAfterReply preference.\r\n* Listen for the PostWasPosted event and check the preference. If it's true, follow the discussion.\r\n"
+  

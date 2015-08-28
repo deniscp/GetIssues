@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/flarum/subscriptions/issues/4",
+    "labels_url": "https://api.github.com/repos/flarum/subscriptions/issues/4/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/subscriptions/issues/4/comments",
+    "events_url": "https://api.github.com/repos/flarum/subscriptions/issues/4/events",
+    "html_url": "https://github.com/flarum/subscriptions/issues/4",
+    "id": 103515361,
+    "number": 4,
+    "title": "Subscribe to tags",
+    "user": {
+      "login": "tobscure",
+      "id": 128862,
+      "avatar_url": "https://avatars.githubusercontent.com/u/128862?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tobscure",
+      "html_url": "https://github.com/tobscure",
+      "followers_url": "https://api.github.com/users/tobscure/followers",
+      "following_url": "https://api.github.com/users/tobscure/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tobscure/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tobscure/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tobscure/subscriptions",
+      "organizations_url": "https://api.github.com/users/tobscure/orgs",
+      "repos_url": "https://api.github.com/users/tobscure/repos",
+      "events_url": "https://api.github.com/users/tobscure/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tobscure/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-27T13:54:11Z",
+    "updated_at": "2015-08-27T13:54:11Z",
+    "closed_at": null,
+    "body": "What needs to be done:\r\n\r\n* Create a migration to add an \"is_following\" column to the users_tags table (if it exists).\r\n* OR, it might be better to just have a separate tags_following table? Not sure.\r\n* Add an extensible TagControls mechanism to the tags extension, and make sure other parts of the tags extension are extensible.\r\n* Use the ApiAttributes event to add an \"isFollowing\" attribute to the TagSerializer.\r\n* Add code to persist the \"isFollowing\" attribute using the TagWillBeSaved event.\r\n* Extend the tag extension's TagControls util and add a \"follow\" button that toggles/saves the isFollowing attribute.\r\n* Add code to the NotifyNewPosts listener to send notifications for new discussions to users who are following any of the tags.\r\n"
+  

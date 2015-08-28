@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/flarum/core/issues/289",
+    "labels_url": "https://api.github.com/repos/flarum/core/issues/289/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/core/issues/289/comments",
+    "events_url": "https://api.github.com/repos/flarum/core/issues/289/events",
+    "html_url": "https://github.com/flarum/core/issues/289",
+    "id": 103655598,
+    "number": 289,
+    "title": "Error on saving new tag",
+    "user": {
+      "login": "bgies",
+      "id": 821601,
+      "avatar_url": "https://avatars.githubusercontent.com/u/821601?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bgies",
+      "html_url": "https://github.com/bgies",
+      "followers_url": "https://api.github.com/users/bgies/followers",
+      "following_url": "https://api.github.com/users/bgies/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bgies/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bgies/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bgies/subscriptions",
+      "organizations_url": "https://api.github.com/users/bgies/orgs",
+      "repos_url": "https://api.github.com/users/bgies/repos",
+      "events_url": "https://api.github.com/users/bgies/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bgies/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-28T06:22:05Z",
+    "updated_at": "2015-08-28T06:22:05Z",
+    "closed_at": null,
+    "body": "When saving you get this error :\r\nSQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'is_hidden' at row 1 (SQL: insert into tags (name, slug, description, color, is_hidden) values (Website, website, Feature requests, bug reports, , )) \r\n\r\nChecking and unchecking the \"Hide from all discussions\" fixes it, so I would assume that it just needs a default set in Mithril when the form opens"
+  

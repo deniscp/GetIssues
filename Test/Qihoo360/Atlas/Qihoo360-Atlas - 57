@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/Qihoo360/Atlas/issues/57",
+    "labels_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/57/labels{/name}",
+    "comments_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/57/comments",
+    "events_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/57/events",
+    "html_url": "https://github.com/Qihoo360/Atlas/issues/57",
+    "id": 95327043,
+    "number": 57,
+    "title": "sql不记录日志",
+    "user": {
+      "login": "mu0641",
+      "id": 71642,
+      "avatar_url": "https://avatars.githubusercontent.com/u/71642?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mu0641",
+      "html_url": "https://github.com/mu0641",
+      "followers_url": "https://api.github.com/users/mu0641/followers",
+      "following_url": "https://api.github.com/users/mu0641/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mu0641/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mu0641/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mu0641/subscriptions",
+      "organizations_url": "https://api.github.com/users/mu0641/orgs",
+      "repos_url": "https://api.github.com/users/mu0641/repos",
+      "events_url": "https://api.github.com/users/mu0641/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mu0641/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-07-16T01:37:44Z",
+    "updated_at": "2015-07-16T01:37:44Z",
+    "closed_at": null,
+    "body": "命令行使用MYSQL CLIENT 连上atlas 执行sql查询语句，sql_log文件里面就会记录执行的sql语句，但是我们应用程序里面执行的sql就没有记录在里面。我们用的是HHVM和Laravel。"
+  

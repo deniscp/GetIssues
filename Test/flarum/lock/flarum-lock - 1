@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/flarum/lock/issues/1",
+    "labels_url": "https://api.github.com/repos/flarum/lock/issues/1/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/lock/issues/1/comments",
+    "events_url": "https://api.github.com/repos/flarum/lock/issues/1/events",
+    "html_url": "https://github.com/flarum/lock/issues/1",
+    "id": 103515229,
+    "number": 1,
+    "title": "Schedule discussions to be locked",
+    "user": {
+      "login": "tobscure",
+      "id": 128862,
+      "avatar_url": "https://avatars.githubusercontent.com/u/128862?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tobscure",
+      "html_url": "https://github.com/tobscure",
+      "followers_url": "https://api.github.com/users/tobscure/followers",
+      "following_url": "https://api.github.com/users/tobscure/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tobscure/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tobscure/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tobscure/subscriptions",
+      "organizations_url": "https://api.github.com/users/tobscure/orgs",
+      "repos_url": "https://api.github.com/users/tobscure/repos",
+      "events_url": "https://api.github.com/users/tobscure/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tobscure/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-27T13:53:32Z",
+    "updated_at": "2015-08-27T13:53:32Z",
+    "closed_at": null,
+    "body": "We should allow the admins/mods to set discussions to lock in a number of hours/days/month – both per-discussion, and a global default.\r\n\r\nWhat needs to be done:\r\n\r\n* Spec out exactly how this feature would work."
+  

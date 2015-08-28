@@ -1,0 +1,47 @@
+
+    "url": "https://api.github.com/repos/octokit/octokit.net/issues/864",
+    "labels_url": "https://api.github.com/repos/octokit/octokit.net/issues/864/labels{/name}",
+    "comments_url": "https://api.github.com/repos/octokit/octokit.net/issues/864/comments",
+    "events_url": "https://api.github.com/repos/octokit/octokit.net/issues/864/events",
+    "html_url": "https://github.com/octokit/octokit.net/pull/864",
+    "id": 100036482,
+    "number": 864,
+    "title": "add filename for code search",
+    "user": {
+      "login": "fffej",
+      "id": 15318,
+      "avatar_url": "https://avatars.githubusercontent.com/u/15318?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/fffej",
+      "html_url": "https://github.com/fffej",
+      "followers_url": "https://api.github.com/users/fffej/followers",
+      "following_url": "https://api.github.com/users/fffej/following{/other_user}",
+      "gists_url": "https://api.github.com/users/fffej/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/fffej/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/fffej/subscriptions",
+      "organizations_url": "https://api.github.com/users/fffej/orgs",
+      "repos_url": "https://api.github.com/users/fffej/repos",
+      "events_url": "https://api.github.com/users/fffej/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/fffej/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2015-08-10T11:00:36Z",
+    "updated_at": "2015-08-10T13:59:44Z",
+    "closed_at": null,
+    "pull_request": {
+      "url": "https://api.github.com/repos/octokit/octokit.net/pulls/864",
+      "html_url": "https://github.com/octokit/octokit.net/pull/864",
+      "diff_url": "https://github.com/octokit/octokit.net/pull/864.diff",
+      "patch_url": "https://github.com/octokit/octokit.net/pull/864.patch"
+    },
+    "body": "I couldn't find a helpful `FileName` property for code search (see https://help.github.com/articles/searching-code/#search-by-filename) , so I added it!\r\n\r\n"
+  

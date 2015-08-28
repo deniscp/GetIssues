@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/21",
+    "labels_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/21/labels{/name}",
+    "comments_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/21/comments",
+    "events_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/21/events",
+    "html_url": "https://github.com/michaeldfallen/git-radar/issues/21",
+    "id": 103387293,
+    "number": 21,
+    "title": "Make it an oh-my-zsh theme?",
+    "user": {
+      "login": "ahmetalpbalkan",
+      "id": 159209,
+      "avatar_url": "https://avatars.githubusercontent.com/u/159209?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ahmetalpbalkan",
+      "html_url": "https://github.com/ahmetalpbalkan",
+      "followers_url": "https://api.github.com/users/ahmetalpbalkan/followers",
+      "following_url": "https://api.github.com/users/ahmetalpbalkan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ahmetalpbalkan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ahmetalpbalkan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ahmetalpbalkan/subscriptions",
+      "organizations_url": "https://api.github.com/users/ahmetalpbalkan/orgs",
+      "repos_url": "https://api.github.com/users/ahmetalpbalkan/repos",
+      "events_url": "https://api.github.com/users/ahmetalpbalkan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ahmetalpbalkan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2015-08-26T23:35:40Z",
+    "updated_at": "2015-08-27T17:49:28Z",
+    "closed_at": null,
+    "body": ""
+  

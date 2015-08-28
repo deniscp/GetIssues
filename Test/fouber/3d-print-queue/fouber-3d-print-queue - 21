@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/fouber/3d-print-queue/issues/21",
+    "labels_url": "https://api.github.com/repos/fouber/3d-print-queue/issues/21/labels{/name}",
+    "comments_url": "https://api.github.com/repos/fouber/3d-print-queue/issues/21/comments",
+    "events_url": "https://api.github.com/repos/fouber/3d-print-queue/issues/21/events",
+    "html_url": "https://github.com/fouber/3d-print-queue/issues/21",
+    "id": 97689129,
+    "number": 21,
+    "title": "帮我打印一下 绿灯侠戒指 模型地址 http://www.thingiverse.com/thing:3544",
+    "user": {
+      "login": "gdcnb",
+      "id": 2825702,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2825702?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gdcnb",
+      "html_url": "https://github.com/gdcnb",
+      "followers_url": "https://api.github.com/users/gdcnb/followers",
+      "following_url": "https://api.github.com/users/gdcnb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gdcnb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gdcnb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gdcnb/subscriptions",
+      "organizations_url": "https://api.github.com/users/gdcnb/orgs",
+      "repos_url": "https://api.github.com/users/gdcnb/repos",
+      "events_url": "https://api.github.com/users/gdcnb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gdcnb/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-07-28T12:07:19Z",
+    "updated_at": "2015-07-28T12:07:19Z",
+    "closed_at": null,
+    "body": ""
+  

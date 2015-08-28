@@ -1,0 +1,47 @@
+
+    "url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/29",
+    "labels_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/29/labels{/name}",
+    "comments_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/29/comments",
+    "events_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/29/events",
+    "html_url": "https://github.com/michaeldfallen/git-radar/pull/29",
+    "id": 103580896,
+    "number": 29,
+    "title": "issue-17: Add arguments to make the prompt shorter",
+    "user": {
+      "login": "reinaldo13",
+      "id": 3922614,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3922614?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/reinaldo13",
+      "html_url": "https://github.com/reinaldo13",
+      "followers_url": "https://api.github.com/users/reinaldo13/followers",
+      "following_url": "https://api.github.com/users/reinaldo13/following{/other_user}",
+      "gists_url": "https://api.github.com/users/reinaldo13/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/reinaldo13/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/reinaldo13/subscriptions",
+      "organizations_url": "https://api.github.com/users/reinaldo13/orgs",
+      "repos_url": "https://api.github.com/users/reinaldo13/repos",
+      "events_url": "https://api.github.com/users/reinaldo13/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/reinaldo13/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2015-08-27T19:48:25Z",
+    "updated_at": "2015-08-28T09:51:10Z",
+    "closed_at": null,
+    "pull_request": {
+      "url": "https://api.github.com/repos/michaeldfallen/git-radar/pulls/29",
+      "html_url": "https://github.com/michaeldfallen/git-radar/pull/29",
+      "diff_url": "https://github.com/michaeldfallen/git-radar/pull/29.diff",
+      "patch_url": "https://github.com/michaeldfallen/git-radar/pull/29.patch"
+    },
+    "body": "This is for issue https://github.com/michaeldfallen/git-radar/issues/17. Depending of the status of your git project the prompt rendered by git-radar could get a little long.\r\n\r\nAs per discussion in https://github.com/michaeldfallen/git-radar/issues/17, adding a `--minimal` arg to hide the `git:` part, and a `--no-remote-status` arg that will hide the remote commits status part.\r\n\r\nThis PR includes:\r\n- Main code changes, to add the args described above\r\n- Unit tests\r\n- An update to `README.md` to add a description for these new args"
+  

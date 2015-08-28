@@ -1,0 +1,63 @@
+
+    "url": "https://api.github.com/repos/octokit/octokit.net/issues/836",
+    "labels_url": "https://api.github.com/repos/octokit/octokit.net/issues/836/labels{/name}",
+    "comments_url": "https://api.github.com/repos/octokit/octokit.net/issues/836/comments",
+    "events_url": "https://api.github.com/repos/octokit/octokit.net/issues/836/events",
+    "html_url": "https://github.com/octokit/octokit.net/issues/836",
+    "id": 94978227,
+    "number": 836,
+    "title": "Trying to get contributors for a repo with no commits results in a \"Queued Operations expect status codes of Accepted or OK\" error",
+    "user": {
+      "login": "eliah-hecht-zocdoc",
+      "id": 2191349,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2191349?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/eliah-hecht-zocdoc",
+      "html_url": "https://github.com/eliah-hecht-zocdoc",
+      "followers_url": "https://api.github.com/users/eliah-hecht-zocdoc/followers",
+      "following_url": "https://api.github.com/users/eliah-hecht-zocdoc/following{/other_user}",
+      "gists_url": "https://api.github.com/users/eliah-hecht-zocdoc/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/eliah-hecht-zocdoc/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/eliah-hecht-zocdoc/subscriptions",
+      "organizations_url": "https://api.github.com/users/eliah-hecht-zocdoc/orgs",
+      "repos_url": "https://api.github.com/users/eliah-hecht-zocdoc/repos",
+      "events_url": "https://api.github.com/users/eliah-hecht-zocdoc/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/eliah-hecht-zocdoc/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "url": "https://api.github.com/repos/octokit/octokit.net/labels/bug",
+        "name": "bug",
+        "color": "fc2929"
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": {
+      "login": "Haacked",
+      "id": 19977,
+      "avatar_url": "https://avatars.githubusercontent.com/u/19977?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Haacked",
+      "html_url": "https://github.com/Haacked",
+      "followers_url": "https://api.github.com/users/Haacked/followers",
+      "following_url": "https://api.github.com/users/Haacked/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Haacked/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Haacked/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Haacked/subscriptions",
+      "organizations_url": "https://api.github.com/users/Haacked/orgs",
+      "repos_url": "https://api.github.com/users/Haacked/repos",
+      "events_url": "https://api.github.com/users/Haacked/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Haacked/received_events",
+      "type": "User",
+      "site_admin": true
+    },
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2015-07-14T15:57:47Z",
+    "updated_at": "2015-08-07T17:40:22Z",
+    "closed_at": null,
+    "body": "What I did:\r\nCalled `Statistics.GetContributors` for a repository with no commits in it\r\n\r\nWhat happened:\r\nI got an exception that \"Queued Operations expect status codes of Accepted or OK\" (because GitHub sent back a 204 No Content response)\r\n\r\nWhat I expected:\r\nTo get an empty list back"
+  

@@ -1,0 +1,50 @@
+
+    "url": "https://api.github.com/repos/flarum/core/issues/271",
+    "labels_url": "https://api.github.com/repos/flarum/core/issues/271/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/core/issues/271/comments",
+    "events_url": "https://api.github.com/repos/flarum/core/issues/271/events",
+    "html_url": "https://github.com/flarum/core/issues/271",
+    "id": 103544378,
+    "number": 271,
+    "title": "Anti-spam",
+    "user": {
+      "login": "tobscure",
+      "id": 128862,
+      "avatar_url": "https://avatars.githubusercontent.com/u/128862?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tobscure",
+      "html_url": "https://github.com/tobscure",
+      "followers_url": "https://api.github.com/users/tobscure/followers",
+      "following_url": "https://api.github.com/users/tobscure/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tobscure/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tobscure/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tobscure/subscriptions",
+      "organizations_url": "https://api.github.com/users/tobscure/orgs",
+      "repos_url": "https://api.github.com/users/tobscure/repos",
+      "events_url": "https://api.github.com/users/tobscure/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tobscure/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "url": "https://api.github.com/repos/flarum/core/labels/Feature",
+        "name": "Feature",
+        "color": "009800"
+      },
+      {
+        "url": "https://api.github.com/repos/flarum/core/labels/Needs%20Discussion",
+        "name": "Needs Discussion",
+        "color": "d4c5f9"
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 9,
+    "created_at": "2015-08-27T16:13:35Z",
+    "updated_at": "2015-08-28T09:12:31Z",
+    "closed_at": null,
+    "body": "Need to work out what anti-spam strategies to implement."
+  

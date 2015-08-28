@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/17",
+    "labels_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/17/labels{/name}",
+    "comments_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/17/comments",
+    "events_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/17/events",
+    "html_url": "https://github.com/michaeldfallen/git-radar/issues/17",
+    "id": 103334024,
+    "number": 17,
+    "title": "Add an argument to make the prompt more minimalistic (shorter)",
+    "user": {
+      "login": "reinaldo13",
+      "id": 3922614,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3922614?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/reinaldo13",
+      "html_url": "https://github.com/reinaldo13",
+      "followers_url": "https://api.github.com/users/reinaldo13/followers",
+      "following_url": "https://api.github.com/users/reinaldo13/following{/other_user}",
+      "gists_url": "https://api.github.com/users/reinaldo13/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/reinaldo13/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/reinaldo13/subscriptions",
+      "organizations_url": "https://api.github.com/users/reinaldo13/orgs",
+      "repos_url": "https://api.github.com/users/reinaldo13/repos",
+      "events_url": "https://api.github.com/users/reinaldo13/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/reinaldo13/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2015-08-26T18:16:22Z",
+    "updated_at": "2015-08-27T20:08:33Z",
+    "closed_at": null,
+    "body": "First of all, `git-radar` is brilliant! :smiley: Great Work!\r\n\r\nI do notice that the prompt could get quite long, depending of the status of your git project. For example: `git:(upstream ⚡long-named-branch xx) 1A 1D1M 1A1` could be a little long.\r\n\r\nI wonder if people would be interested in adding an optional `--minimal` arg to the `git-radar` command, so when present, both the `git:` and the remote commits status (i.e: `upstream ⚡`) will not be shown. The reason i'm suggesting to hide the remote commits status is because i don't rely on it 100% of the time, but again, I'm curious to see what others think.\r\n\r\nThe other option could be for this `--minimal` arg to only hide the `git:` part, and then have another arg `--no-remote-status` that, if present, will hide the remote commits status part of the prompt.\r\n\r\nI will be more than happy to help implementing this feature. Let me know what you think.\r\n\r\nCheers!"
+  

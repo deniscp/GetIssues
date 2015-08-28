@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/mit-nlp/MITIE/issues/24",
+    "labels_url": "https://api.github.com/repos/mit-nlp/MITIE/issues/24/labels{/name}",
+    "comments_url": "https://api.github.com/repos/mit-nlp/MITIE/issues/24/comments",
+    "events_url": "https://api.github.com/repos/mit-nlp/MITIE/issues/24/events",
+    "html_url": "https://github.com/mit-nlp/MITIE/issues/24",
+    "id": 103498743,
+    "number": 24,
+    "title": "Sourceforge considered harmful",
+    "user": {
+      "login": "sethwoodworth",
+      "id": 123998,
+      "avatar_url": "https://avatars.githubusercontent.com/u/123998?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sethwoodworth",
+      "html_url": "https://github.com/sethwoodworth",
+      "followers_url": "https://api.github.com/users/sethwoodworth/followers",
+      "following_url": "https://api.github.com/users/sethwoodworth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/sethwoodworth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/sethwoodworth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/sethwoodworth/subscriptions",
+      "organizations_url": "https://api.github.com/users/sethwoodworth/orgs",
+      "repos_url": "https://api.github.com/users/sethwoodworth/repos",
+      "events_url": "https://api.github.com/users/sethwoodworth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/sethwoodworth/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2015-08-27T12:38:19Z",
+    "updated_at": "2015-08-28T00:40:18Z",
+    "closed_at": null,
+    "body": "Sourceforge has a troubling history of [hijacking projects](http://seclists.org/nmap-dev/2015/q2/194) and should be considered harmful.\r\n\r\nGithub has arbitrary file downloads associated with releases (git tags).  An admin should be able to add the data download for MITIE to [the repo's releases](https://github.com/mit-nlp/MITIE/releases/tag/v0.4) and away from [Sourceforge](http://sourceforge.net/projects/mitie/postdownload?source=dlp)."
+  

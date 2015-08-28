@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/10",
+    "labels_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/10/labels{/name}",
+    "comments_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/10/comments",
+    "events_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/10/events",
+    "html_url": "https://github.com/michaeldfallen/git-radar/issues/10",
+    "id": 103258169,
+    "number": 10,
+    "title": "Easier install",
+    "user": {
+      "login": "jart",
+      "id": 49262,
+      "avatar_url": "https://avatars.githubusercontent.com/u/49262?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jart",
+      "html_url": "https://github.com/jart",
+      "followers_url": "https://api.github.com/users/jart/followers",
+      "following_url": "https://api.github.com/users/jart/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jart/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jart/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jart/subscriptions",
+      "organizations_url": "https://api.github.com/users/jart/orgs",
+      "repos_url": "https://api.github.com/users/jart/repos",
+      "events_url": "https://api.github.com/users/jart/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jart/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 20,
+    "created_at": "2015-08-26T12:42:12Z",
+    "updated_at": "2015-08-28T13:46:08Z",
+    "closed_at": null,
+    "body": "Why go to the trouble of installing a package through homebrew in order to customize `PS1`? What about Linux users?\r\n\r\nConsider instead maintaining a \"binary\" release file in your repository. You could just have a makefile cat everything together, so long as you remember to run it before each commit.\r\n\r\nThen your install instructions could be simple and transparent:\r\n\r\n```bash\r\nwget -O ~/.git-radar.bashrc https://raw.githubusercontent.com/michaeldfallen/git-radar/master/.git-radar.bashrc\r\nsed -i -e '/.git-radar.bashrc/d' ~/.bashrc\r\necho source ~/.git-radar.bashrc >>~/.bashrc\r\nsource ~/.git-radar.bashrc\r\n```"
+  

@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/26",
+    "labels_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/26/labels{/name}",
+    "comments_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/26/comments",
+    "events_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/26/events",
+    "html_url": "https://github.com/michaeldfallen/git-radar/issues/26",
+    "id": 103508202,
+    "number": 26,
+    "title": "redirecting on OSX",
+    "user": {
+      "login": "askl56",
+      "id": 3062663,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3062663?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/askl56",
+      "html_url": "https://github.com/askl56",
+      "followers_url": "https://api.github.com/users/askl56/followers",
+      "following_url": "https://api.github.com/users/askl56/following{/other_user}",
+      "gists_url": "https://api.github.com/users/askl56/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/askl56/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/askl56/subscriptions",
+      "organizations_url": "https://api.github.com/users/askl56/orgs",
+      "repos_url": "https://api.github.com/users/askl56/repos",
+      "events_url": "https://api.github.com/users/askl56/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/askl56/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2015-08-27T13:23:57Z",
+    "updated_at": "2015-08-27T17:42:13Z",
+    "closed_at": null,
+    "body": "Hey,\r\n\r\nI installed via Homebrew and added the export path and got the following error when running ``` source ~/.zshrc ```\r\n\r\n```nohup: redirecting stderr to stdout```"
+  

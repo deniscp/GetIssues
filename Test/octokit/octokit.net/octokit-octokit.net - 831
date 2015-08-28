@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/octokit/octokit.net/issues/831",
+    "labels_url": "https://api.github.com/repos/octokit/octokit.net/issues/831/labels{/name}",
+    "comments_url": "https://api.github.com/repos/octokit/octokit.net/issues/831/comments",
+    "events_url": "https://api.github.com/repos/octokit/octokit.net/issues/831/events",
+    "html_url": "https://github.com/octokit/octokit.net/issues/831",
+    "id": 92825718,
+    "number": 831,
+    "title": "deadlock in ASP.NET MVC",
+    "user": {
+      "login": "qin-nz",
+      "id": 6998071,
+      "avatar_url": "https://avatars.githubusercontent.com/u/6998071?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/qin-nz",
+      "html_url": "https://github.com/qin-nz",
+      "followers_url": "https://api.github.com/users/qin-nz/followers",
+      "following_url": "https://api.github.com/users/qin-nz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/qin-nz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/qin-nz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/qin-nz/subscriptions",
+      "organizations_url": "https://api.github.com/users/qin-nz/orgs",
+      "repos_url": "https://api.github.com/users/qin-nz/repos",
+      "events_url": "https://api.github.com/users/qin-nz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/qin-nz/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2015-07-03T08:49:54Z",
+    "updated_at": "2015-07-03T09:06:13Z",
+    "closed_at": null,
+    "body": "I am using following method in a async method, and it deadlock will occured.\r\n```csharp\r\nvar masterUri = await GitHubClient.Repository.Content.GetArchiveLink(Owener, Repo, ArchiveFormat.Zipball).ConfigureAwait(false);\r\n```"
+  

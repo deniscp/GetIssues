@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/octokit/octokit.net/issues/870",
+    "labels_url": "https://api.github.com/repos/octokit/octokit.net/issues/870/labels{/name}",
+    "comments_url": "https://api.github.com/repos/octokit/octokit.net/issues/870/comments",
+    "events_url": "https://api.github.com/repos/octokit/octokit.net/issues/870/events",
+    "html_url": "https://github.com/octokit/octokit.net/issues/870",
+    "id": 102971490,
+    "number": 870,
+    "title": "ASCII device control character issue",
+    "user": {
+      "login": "needlina",
+      "id": 6994028,
+      "avatar_url": "https://avatars.githubusercontent.com/u/6994028?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/needlina",
+      "html_url": "https://github.com/needlina",
+      "followers_url": "https://api.github.com/users/needlina/followers",
+      "following_url": "https://api.github.com/users/needlina/following{/other_user}",
+      "gists_url": "https://api.github.com/users/needlina/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/needlina/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/needlina/subscriptions",
+      "organizations_url": "https://api.github.com/users/needlina/orgs",
+      "repos_url": "https://api.github.com/users/needlina/repos",
+      "events_url": "https://api.github.com/users/needlina/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/needlina/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-25T08:01:45Z",
+    "updated_at": "2015-08-26T00:52:56Z",
+    "closed_at": null,
+    "body": "Hi. how are you?\r\ni really appreciate to you guys\r\ni dont know if you remember me or not,, about \"Merge in GitHub API\"\r\nthanks to your help and advice, i could finish my project successfully. thank you so much.\r\ni have one question about github. so i'm sending you this :))\r\nnow i'm in system improving. i'm using the github API with some code, \r\nthe code contains non-displayed ascii character, you know.. like \"device control 4\", \"\\u0014\"..etc\r\nyou cannot see the character, but you can see the character in DOS environment, using Ctrl+R,Ctrl+T...\r\ni know that usually cant see normal web site environment.\r\nit's ok even if i couldnt see the character in Web.\r\nbut when i copy the codes and then paste to other edit tool,\r\ni want to take the codes, now github situation is,,, when i upload my code to github, they just throw exception or replace with \"question mark\" but if i edit directly it on the web, it works well.\r\nbut... through Github Api, its fail....\r\n\r\ni will tell you what i want with numbering.\r\n\r\n1. execute 'cmd.exe' and Ctrl+T, enter then you can see the some character, q <- similar this\r\n\r\n\r\n\r\n\r\n2. copy the character, paste to github edit page, and commit. then it will looks like dot.\r\n   (but it's ok, if i copy, i can use it)\r\n\r\n![20150825_102838](https://cloud.githubusercontent.com/assets/6994028/9456537/17738892-4b14-11e5-8036-c739a2b740d8.png)\r\n\r\n3. but Octokit, in detail, BlobReference's Create method. it cannot recognize and throw the exception or replace with question mark. i think because of the character,\r\n\r\ndo you have any idea about this problem?\r\ni hope that i can receive your reply soon :D\r\n\r\nif you need my explaination more, anytime send me email please :)\r\nsincerely thank you.\r\n\r\n\r\n"
+  

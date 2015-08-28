@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/octokit/octokit.net/issues/861",
+    "labels_url": "https://api.github.com/repos/octokit/octokit.net/issues/861/labels{/name}",
+    "comments_url": "https://api.github.com/repos/octokit/octokit.net/issues/861/comments",
+    "events_url": "https://api.github.com/repos/octokit/octokit.net/issues/861/events",
+    "html_url": "https://github.com/octokit/octokit.net/issues/861",
+    "id": 99558231,
+    "number": 861,
+    "title": "Consider making RepositoryContent.EncodedContent public",
+    "user": {
+      "login": "yufeih",
+      "id": 511355,
+      "avatar_url": "https://avatars.githubusercontent.com/u/511355?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/yufeih",
+      "html_url": "https://github.com/yufeih",
+      "followers_url": "https://api.github.com/users/yufeih/followers",
+      "following_url": "https://api.github.com/users/yufeih/following{/other_user}",
+      "gists_url": "https://api.github.com/users/yufeih/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/yufeih/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/yufeih/subscriptions",
+      "organizations_url": "https://api.github.com/users/yufeih/orgs",
+      "repos_url": "https://api.github.com/users/yufeih/repos",
+      "events_url": "https://api.github.com/users/yufeih/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/yufeih/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-07T01:41:34Z",
+    "updated_at": "2015-08-07T01:41:42Z",
+    "closed_at": null,
+    "body": "Please consider making `RepositoryContent.EncodedContent` public or provide an alternative to get the raw bytes of a file, this is useful when working with binary files."
+  

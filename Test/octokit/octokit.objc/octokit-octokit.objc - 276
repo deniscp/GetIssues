@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/octokit/octokit.objc/issues/276",
+    "labels_url": "https://api.github.com/repos/octokit/octokit.objc/issues/276/labels{/name}",
+    "comments_url": "https://api.github.com/repos/octokit/octokit.objc/issues/276/comments",
+    "events_url": "https://api.github.com/repos/octokit/octokit.objc/issues/276/events",
+    "html_url": "https://github.com/octokit/octokit.objc/issues/276",
+    "id": 102510641,
+    "number": 276,
+    "title": "Cannot fetchUserRepositories use the code.",
+    "user": {
+      "login": "Janrin",
+      "id": 9426886,
+      "avatar_url": "https://avatars.githubusercontent.com/u/9426886?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Janrin",
+      "html_url": "https://github.com/Janrin",
+      "followers_url": "https://api.github.com/users/Janrin/followers",
+      "following_url": "https://api.github.com/users/Janrin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Janrin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Janrin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Janrin/subscriptions",
+      "organizations_url": "https://api.github.com/users/Janrin/orgs",
+      "repos_url": "https://api.github.com/users/Janrin/repos",
+      "events_url": "https://api.github.com/users/Janrin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Janrin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-22T07:00:34Z",
+    "updated_at": "2015-08-22T07:02:36Z",
+    "closed_at": null,
+    "body": "Code:\r\nOCTUser *user = [OCTUser userWithRawLogin:@\"Janrin\" server:OCTServer.dotComServer];\r\n    OCTClient *client = [OCTClient unauthenticatedClientWithUser:user];\r\n    RACSignal *request = [client fetchUserRepositories];\r\n    [request subscribeNext:^(OCTRepository *repository) {\r\n        NSLog(@\"%@\", repository.name);\r\n    } error:^(NSError *error) {\r\n        NSLog(@\"%@\", error);\r\n    } completed:^{\r\n        NSLog(@\"done.....\");\r\n    }];\r\n\r\nConsole Log:\r\n2015-08-22 14:58:27.467 Example[5234:471735] Error Domain=OCTClientErrorDomain Code=668 \"Not Found\" UserInfo=0x7ff872c685a0 {NSLocalizedDescription=Not Found, OCTClientErrorHTTPStatusCodeKey=404, OCTClientErrorRequestURLKey=https://api.github.com/users/(null)/repos?per_page=100, NSUnderlyingError=0x7ff872d29bb0 \"Expected status code in (200-299,304), got 404\"}"
+  

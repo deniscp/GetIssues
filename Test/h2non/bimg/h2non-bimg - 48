@@ -1,0 +1,45 @@
+
+    "url": "https://api.github.com/repos/h2non/bimg/issues/48",
+    "labels_url": "https://api.github.com/repos/h2non/bimg/issues/48/labels{/name}",
+    "comments_url": "https://api.github.com/repos/h2non/bimg/issues/48/comments",
+    "events_url": "https://api.github.com/repos/h2non/bimg/issues/48/events",
+    "html_url": "https://github.com/h2non/bimg/issues/48",
+    "id": 97064109,
+    "number": 48,
+    "title": "Smart crop support",
+    "user": {
+      "login": "h2non",
+      "id": 63402,
+      "avatar_url": "https://avatars.githubusercontent.com/u/63402?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/h2non",
+      "html_url": "https://github.com/h2non",
+      "followers_url": "https://api.github.com/users/h2non/followers",
+      "following_url": "https://api.github.com/users/h2non/following{/other_user}",
+      "gists_url": "https://api.github.com/users/h2non/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/h2non/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/h2non/subscriptions",
+      "organizations_url": "https://api.github.com/users/h2non/orgs",
+      "repos_url": "https://api.github.com/users/h2non/repos",
+      "events_url": "https://api.github.com/users/h2non/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/h2non/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "url": "https://api.github.com/repos/h2non/bimg/labels/feature%20request",
+        "name": "feature request",
+        "color": "eb6420"
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-07-24T14:22:22Z",
+    "updated_at": "2015-07-24T14:22:30Z",
+    "closed_at": null,
+    "body": "See: https://github.com/muesli/smartcrop"
+  

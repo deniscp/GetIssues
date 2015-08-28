@@ -1,0 +1,45 @@
+
+    "url": "https://api.github.com/repos/flarum/core/issues/265",
+    "labels_url": "https://api.github.com/repos/flarum/core/issues/265/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/core/issues/265/comments",
+    "events_url": "https://api.github.com/repos/flarum/core/issues/265/events",
+    "html_url": "https://github.com/flarum/core/issues/265",
+    "id": 103512818,
+    "number": 265,
+    "title": "Improve translation key consistency",
+    "user": {
+      "login": "tobscure",
+      "id": 128862,
+      "avatar_url": "https://avatars.githubusercontent.com/u/128862?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tobscure",
+      "html_url": "https://github.com/tobscure",
+      "followers_url": "https://api.github.com/users/tobscure/followers",
+      "following_url": "https://api.github.com/users/tobscure/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tobscure/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tobscure/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tobscure/subscriptions",
+      "organizations_url": "https://api.github.com/users/tobscure/orgs",
+      "repos_url": "https://api.github.com/users/tobscure/repos",
+      "events_url": "https://api.github.com/users/tobscure/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tobscure/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "url": "https://api.github.com/repos/flarum/core/labels/Cleanup",
+        "name": "Cleanup",
+        "color": "0052cc"
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2015-08-27T13:44:20Z",
+    "updated_at": "2015-08-28T04:09:00Z",
+    "closed_at": null,
+    "body": "We need to solidify our strategy for naming translation keys, and apply it globally for consistency. Initial discussion took place here: http://discuss.flarum.org/d/336-potential-l10n-stumbling-blocks/10\r\n\r\nThe basic idea is to have **context-related suffixes** for similar translations (see stumbling block 4) and **prefixes** to group related translations (stumbling block 5). However, this strategy needs further refinement, and then needs to be applied.\r\n\r\nWhat needs to be done:\r\n\r\n* Go through all components in js/forum/src/components, looking for instances of `app.trans`, cross-matching the keys with their translations in locale/en.yml. Rename keys where necessary so that they are consistent and descriptive.\r\n* Through this process, come up with a brief list of rules/guidelines to follow when naming translation keys.\r\n* Apply the strategy to default extension translations too."
+  

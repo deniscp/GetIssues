@@ -1,0 +1,50 @@
+
+    "url": "https://api.github.com/repos/flarum/core/issues/277",
+    "labels_url": "https://api.github.com/repos/flarum/core/issues/277/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/core/issues/277/comments",
+    "events_url": "https://api.github.com/repos/flarum/core/issues/277/events",
+    "html_url": "https://github.com/flarum/core/issues/277",
+    "id": 103618547,
+    "number": 277,
+    "title": "Custom Group Name is Wrong: core.group_xxx",
+    "user": {
+      "login": "thecodingwizard",
+      "id": 7865976,
+      "avatar_url": "https://avatars.githubusercontent.com/u/7865976?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thecodingwizard",
+      "html_url": "https://github.com/thecodingwizard",
+      "followers_url": "https://api.github.com/users/thecodingwizard/followers",
+      "following_url": "https://api.github.com/users/thecodingwizard/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thecodingwizard/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thecodingwizard/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thecodingwizard/subscriptions",
+      "organizations_url": "https://api.github.com/users/thecodingwizard/orgs",
+      "repos_url": "https://api.github.com/users/thecodingwizard/repos",
+      "events_url": "https://api.github.com/users/thecodingwizard/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thecodingwizard/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "url": "https://api.github.com/repos/flarum/core/labels/Bug",
+        "name": "Bug",
+        "color": "e11d21"
+      },
+      {
+        "url": "https://api.github.com/repos/flarum/core/labels/Good%20for%20New%20Contributors",
+        "name": "Good for New Contributors",
+        "color": "c7def8"
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2015-08-27T23:53:46Z",
+    "updated_at": "2015-08-28T03:51:58Z",
+    "closed_at": null,
+    "body": "If I create a new group and assign it to someone, when I hover over the tag it will say core.group_xxx instead of XXX."
+  

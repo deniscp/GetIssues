@@ -29,6 +29,8 @@ public class GetIssues
 	this.dbCon=null;
     }
 
+    //Gets https targetURL response body
+    //Prints to output informations about sent and received HTTP header and response status
     String get(String targetURL)
     {
 	String response=null;
@@ -103,6 +105,66 @@ public class GetIssues
 	return response;
     }
 
+    //Like get but does not print information on stdout
+    String gets(String targetURL)
+    {
+	String response=null;
+
+	HttpsURLConnection connection = null;  
+	try {
+	    //Create connection
+	    URL url = new URL(targetURL);
+	    connection = (HttpsURLConnection)url.openConnection();
+	    connection.setRequestMethod("GET");
+	    connection.setRequestProperty("Accept", "application/vnd.github.v3+json");
+	    connection.setRequestProperty("User-Agent", "Firefox");
+	    connection.setUseCaches(false);
+
+
+
+	    connection.connect();
+
+	    //Get Response  
+	    InputStream is = connection.getInputStream();
+	    BufferedReader rd = new BufferedReader(new InputStreamReader(is));
+	    StringBuilder strBld = new StringBuilder(); // or StringBuffer if not Java 5+ 
+
+	    String line;
+	    int numLine=0;
+	    while((line = rd.readLine()) != null) {
+
+		strBld.append(line);
+		strBld.append('\n');
+		numLine++;
+	    }
+	    rd.close();
+	    is.close();
+
+
+	    response= strBld.toString();
+
+	}
+	catch (SocketTimeoutException toe)
+	{
+	    toe.printStackTrace();
+	    System.err.println("Timeout expired before the connection can be established!\nHave been transferred "+toe.bytesTransferred+" bytes.");
+	    toe.getMessage();
+	}
+	catch (Exception e) {
+	    e.printStackTrace();
+	}
+	finally {
+	    if(connection != null) {
+		connection.disconnect(); 
+	    }
+	}
+	return response;
+    }
+
+    //fromListToArray parses a csv list of elements of a HTTPS
+    //response and assigns them to a String[]
+    //First it counts response elements number to know the String[] length
+    //Second it assigns those elements to String[]
     String[] fromListToArray(String response)
     {	
 	String[] repos;	
@@ -112,11 +174,10 @@ public class GetIssues
 	int numEl=0;
 	final String body="\"body\":";
 
-	//Scorro l'intera risposta per contare quanti elementi
-	//appartegono al vettore
+	//Parsing response to count its elements
 	for(i=0;i<response.length();i++)
 	{
-	    //Ignoro il contenuto del campo "body":
+	    //Skip "body" content
 	    if( (response.length()-i) > body.length() )
 		if( response.substring(i,i+body.length()).equals(body) )
 		{
@@ -152,11 +213,10 @@ public class GetIssues
 	level=0;
 	int beginIndex=0,endIndex=0;
 
-	//Scorro l'intera risposta per prelevare gli elementi del
-	//vettore da assegnare a repos[]
+	//Parsing response to assign its elements to repos[] array
 	for(i=0;i<response.length();i++)
 	{
-	    //Ignoro il contenuto del campo "body":
+	    //Skip "body" content
 	    if( (response.length()-i) > body.length() )
 		if( response.substring(i,i+body.length()).equals(body) )
 		{
@@ -205,6 +265,9 @@ public class GetIssues
 	return repos;
     }
 
+    //getIssues looks for "has_issues" value, for every repository passed as argument,
+    //and if it's true then it calls printIssues function passing "issues_url" value
+    //and "full_name" value.
     void getIssues(String[] repos)
     {
 	int i;
@@ -218,13 +281,13 @@ public class GetIssues
 
 	for(i=0;i<repos.length;i++)
 	{
-	    //Leggo il campo "has_issues": del repository[i]
+	    //Get "has_issues" value of repository[i]
 	    beginIndex=repos[i].indexOf(has_issues)+has_issues.length();
 	    for( ; repos[i].charAt(beginIndex)==' ' ; beginIndex++);
 	    endIndex=beginIndex+"true".length();
 	    value=repos[i].substring( beginIndex, endIndex );
 
-	    //Leggo il campo "full_name": del repository[i]
+	    //Get "full_name" value of repository[i]
 	    beginIndex=repos[i].indexOf(full_name)+full_name.length();
 	    for( ; repos[i].charAt(beginIndex)!='"';beginIndex++);
 	    beginIndex++;
@@ -234,18 +297,18 @@ public class GetIssues
 
 	    if( value.equals("true") )
 	    {
-		//se "has_issues":true leggo il campo "issues_url":
+		//If "has_issues":true get "issues_url" value
 		beginIndex=repos[i].indexOf(issues_url)+issues_url.length();
 		for( ; repos[i].charAt(beginIndex)!='"' ; beginIndex++);
 		beginIndex++;
 		for(endIndex=beginIndex;repos[i].charAt(endIndex)!='"' && repos[i].charAt(endIndex)!='{';endIndex++);
 		url=repos[i].substring(beginIndex,endIndex);
 
-		//stampo su files gli issues del repository[i]
+		//print to files all issues informations
 		printIssues(repoName,url);
 	    }
 	    else
-		System.out.println("Il repository \""+repoName+"\" non ha issues associati.");
+		System.out.println("Repository \""+repoName+"\" has no issue.\n");
 	}
 
 	try{
@@ -260,6 +323,8 @@ public class GetIssues
 	}
     }
 
+    //printIssues follows the issues url passed by getIssues and gets additional informations about the issues.
+    //Creates a table named "Issues" and prints to files those information
     void printIssues(String repoName, String url)
     {
 	SimpleDateFormat sdf =new SimpleDateFormat("yyyy-MM-dd");
@@ -277,34 +342,34 @@ public class GetIssues
 	PrintWriter file=null;
 
 
-	System.out.println("Name: "+repoName+", url: "+url);
-	String response=get(url);
+	System.out.println("Repository \""+repoName+"\" has issues, following its url ("+url+")");
+	String response=gets(url);
 	String[] issues=fromListToArray(response);
 
 	
 	for(i=0,j=0;i<issues.length;i++)
 	{
-	    //Leggo il campo "state": dell' issue[i]
+	    //Get "state" value of issue[i]
 	    beginIndex=issues[i].indexOf(state)+state.length();
 	    for( ; issues[i].charAt(beginIndex)!='"' ; beginIndex++);
 	    beginIndex++;
 	    endIndex=beginIndex+"open".length();
 	    state_value=issues[i].substring( beginIndex, endIndex );
 
-	    //Leggo il campo "login": dell' issue[i]
+	    //Get "login" value of issue[i]
 	    beginIndex=issues[i].indexOf(login)+login.length();
 	    for( ; issues[i].charAt(beginIndex)!='"' ; beginIndex++);
 	    beginIndex++;
 	    for(endIndex=beginIndex;issues[i].charAt(endIndex)!='"';endIndex++);
 	    login_value=issues[i].substring( beginIndex, endIndex );
 
-	    //Leggo il campo "number": dell' issue[i]
+	    //Get "number" value of issue[i]
 	    beginIndex=issues[i].indexOf(number)+number.length();
 	    for( ; issues[i].charAt(beginIndex)==' ' ; beginIndex++);
 	    for(endIndex=beginIndex;issues[i].charAt(endIndex)!=',';endIndex++);
 	    number_value=issues[i].substring( beginIndex, endIndex );
 
-	    //Leggo il campo "created_at": dell' issue[i]
+	    //Get "created_at" value of issue[i]
 	    beginIndex=issues[i].indexOf(created_at)+created_at.length();
 	    for( ; issues[i].charAt(beginIndex)!='"' ; beginIndex++);
 	    beginIndex++;
@@ -319,11 +384,12 @@ public class GetIssues
 	    }
 
 	    issueName=repoName.replace('/','-') + " - " + number_value;
-	    System.out.println("\n Nome Issue: "+issueName+"\n \"state\": "+state_value);
-	    System.out.println(" \"created_at\": "+sdf2.format(date.getTime()) +" | input date: "+ sdf2.format(this.date.getTime()));
+	    System.out.println("\n\t Issue: "+issueName+"\n\t \"state\": "+state_value);
+	    System.out.print("\t \"created_at\": "+sdf2.format(date.getTime()) +" | input date: "+ sdf2.format(this.date.getTime()));
 
 	    if(state_value.equals("open") && this.date.compareTo(date)<=0)
 	    {
+		System.out.println("\t V");
 		j++;
 		numIssues++;
 
@@ -375,11 +441,11 @@ public class GetIssues
 		file.write(issues[i]);
 		file.flush();
 		file.close();
-
-		System.out.println(issues[i]+"\n----------------------------------------");
 	    }
+	    else
+		System.out.print("\n");
 	}
-	System.out.println("\n Issues aperti e antecedenti alla data passata in input: "+j+'/'+issues.length+"\n--------------------------------------\n\n");
+	System.out.println("\n\t Issues opened before input date / overall issues: "+j+'/'+issues.length+"\n--------------------------------------\n");
     }
 
     void openDB()
@@ -416,8 +482,8 @@ public class GetIssues
 	}
 	*/
 	catch(SQLException ex){
+	    System.err.println("An error occurred accessing database");
 	    System.err.println("SQLException: "+ex.getMessage());
-	    System.err.println("Accesso al database non riuscito");
 	    System.exit(1);
 	}
 	finally{
@@ -429,6 +495,6 @@ public class GetIssues
 		}
 	}
 
-	System.err.println("Accesso al DB effettuato correttamente e tabella Issues creata");
+	System.err.println("Database accessed with no errors, Issues table created");
     }
 }//End of Class GetIssues

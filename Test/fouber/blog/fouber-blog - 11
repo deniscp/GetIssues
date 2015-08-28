@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/fouber/blog/issues/11",
+    "labels_url": "https://api.github.com/repos/fouber/blog/issues/11/labels{/name}",
+    "comments_url": "https://api.github.com/repos/fouber/blog/issues/11/comments",
+    "events_url": "https://api.github.com/repos/fouber/blog/issues/11/events",
+    "html_url": "https://github.com/fouber/blog/issues/11",
+    "id": 103397166,
+    "number": 11,
+    "title": "实现方法",
+    "user": {
+      "login": "liuJianHui88",
+      "id": 12598696,
+      "avatar_url": "https://avatars.githubusercontent.com/u/12598696?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/liuJianHui88",
+      "html_url": "https://github.com/liuJianHui88",
+      "followers_url": "https://api.github.com/users/liuJianHui88/followers",
+      "following_url": "https://api.github.com/users/liuJianHui88/following{/other_user}",
+      "gists_url": "https://api.github.com/users/liuJianHui88/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/liuJianHui88/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/liuJianHui88/subscriptions",
+      "organizations_url": "https://api.github.com/users/liuJianHui88/orgs",
+      "repos_url": "https://api.github.com/users/liuJianHui88/repos",
+      "events_url": "https://api.github.com/users/liuJianHui88/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/liuJianHui88/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2015-08-27T00:57:06Z",
+    "updated_at": "2015-08-27T01:04:34Z",
+    "closed_at": null,
+    "body": "能不能举例子，然后做个教程啊，虽然这个很详细了，但看起来还是晕。"
+  

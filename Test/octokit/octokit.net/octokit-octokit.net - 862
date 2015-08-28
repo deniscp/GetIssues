@@ -1,0 +1,47 @@
+
+    "url": "https://api.github.com/repos/octokit/octokit.net/issues/862",
+    "labels_url": "https://api.github.com/repos/octokit/octokit.net/issues/862/labels{/name}",
+    "comments_url": "https://api.github.com/repos/octokit/octokit.net/issues/862/comments",
+    "events_url": "https://api.github.com/repos/octokit/octokit.net/issues/862/events",
+    "html_url": "https://github.com/octokit/octokit.net/pull/862",
+    "id": 99746671,
+    "number": 862,
+    "title": "Handle empty content better",
+    "user": {
+      "login": "Haacked",
+      "id": 19977,
+      "avatar_url": "https://avatars.githubusercontent.com/u/19977?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Haacked",
+      "html_url": "https://github.com/Haacked",
+      "followers_url": "https://api.github.com/users/Haacked/followers",
+      "following_url": "https://api.github.com/users/Haacked/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Haacked/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Haacked/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Haacked/subscriptions",
+      "organizations_url": "https://api.github.com/users/Haacked/orgs",
+      "repos_url": "https://api.github.com/users/Haacked/repos",
+      "events_url": "https://api.github.com/users/Haacked/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Haacked/received_events",
+      "type": "User",
+      "site_admin": true
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-07T23:21:44Z",
+    "updated_at": "2015-08-07T23:21:44Z",
+    "closed_at": null,
+    "pull_request": {
+      "url": "https://api.github.com/repos/octokit/octokit.net/pulls/862",
+      "html_url": "https://github.com/octokit/octokit.net/pull/862",
+      "diff_url": "https://github.com/octokit/octokit.net/pull/862.diff",
+      "patch_url": "https://github.com/octokit/octokit.net/pull/862.patch"
+    },
+    "body": "Fixes #836\r\n\r\nIf we get a 204 No Content response to GetQueuedContent, we should return an empty collection rather than throw an exception."
+  

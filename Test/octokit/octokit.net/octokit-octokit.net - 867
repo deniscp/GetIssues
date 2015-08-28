@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/octokit/octokit.net/issues/867",
+    "labels_url": "https://api.github.com/repos/octokit/octokit.net/issues/867/labels{/name}",
+    "comments_url": "https://api.github.com/repos/octokit/octokit.net/issues/867/comments",
+    "events_url": "https://api.github.com/repos/octokit/octokit.net/issues/867/events",
+    "html_url": "https://github.com/octokit/octokit.net/issues/867",
+    "id": 102617045,
+    "number": 867,
+    "title": "Merged is always false in Pull Request list",
+    "user": {
+      "login": "lucamorelli",
+      "id": 127777,
+      "avatar_url": "https://avatars.githubusercontent.com/u/127777?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lucamorelli",
+      "html_url": "https://github.com/lucamorelli",
+      "followers_url": "https://api.github.com/users/lucamorelli/followers",
+      "following_url": "https://api.github.com/users/lucamorelli/following{/other_user}",
+      "gists_url": "https://api.github.com/users/lucamorelli/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/lucamorelli/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/lucamorelli/subscriptions",
+      "organizations_url": "https://api.github.com/users/lucamorelli/orgs",
+      "repos_url": "https://api.github.com/users/lucamorelli/repos",
+      "events_url": "https://api.github.com/users/lucamorelli/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/lucamorelli/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2015-08-23T13:08:21Z",
+    "updated_at": "2015-08-24T05:01:48Z",
+    "closed_at": null,
+    "body": "I'm reading the list of the Pull Request list of a repository looking for all the merge, but I noticed the property **Merged** is always false, although the pull request in the site is merged and also in the request object the property **MergedAt** is not null.\r\nAnother thing: How can I find the final commit generated at the end of the merge?"
+  

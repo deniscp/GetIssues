@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/flarum/core/issues/288",
+    "labels_url": "https://api.github.com/repos/flarum/core/issues/288/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/core/issues/288/comments",
+    "events_url": "https://api.github.com/repos/flarum/core/issues/288/events",
+    "html_url": "https://github.com/flarum/core/issues/288",
+    "id": 103654992,
+    "number": 288,
+    "title": "Reserved Column Names in Tables",
+    "user": {
+      "login": "geoclicks",
+      "id": 5212833,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5212833?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/geoclicks",
+      "html_url": "https://github.com/geoclicks",
+      "followers_url": "https://api.github.com/users/geoclicks/followers",
+      "following_url": "https://api.github.com/users/geoclicks/following{/other_user}",
+      "gists_url": "https://api.github.com/users/geoclicks/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/geoclicks/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/geoclicks/subscriptions",
+      "organizations_url": "https://api.github.com/users/geoclicks/orgs",
+      "repos_url": "https://api.github.com/users/geoclicks/repos",
+      "events_url": "https://api.github.com/users/geoclicks/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/geoclicks/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-28T06:17:37Z",
+    "updated_at": "2015-08-28T06:32:53Z",
+    "closed_at": null,
+    "body": "Hi there,\r\n\r\nNoticed that the config table has two columns, 'key' and 'value'. Can these be changed in the released software? They're reserved keywords.\r\n\r\nThe following statement fails from the mysql cli.\r\n\r\nupdate config set value='/tags' where key='default_route';\r\n\r\nNeeds to be changed to \r\n\r\nupdate config set config.value='/tags' where config.key='default_route';\r\n\r\nHave not looked at the other tables, there may be more. \r\n\r\nReserved words can be found here: https://dev.mysql.com/doc/refman/5.0/en/keywords.html\r\n"
+  

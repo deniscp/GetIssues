@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/octokit/octokit.rb/issues/623",
+    "labels_url": "https://api.github.com/repos/octokit/octokit.rb/issues/623/labels{/name}",
+    "comments_url": "https://api.github.com/repos/octokit/octokit.rb/issues/623/comments",
+    "events_url": "https://api.github.com/repos/octokit/octokit.rb/issues/623/events",
+    "html_url": "https://github.com/octokit/octokit.rb/issues/623",
+    "id": 93853344,
+    "number": 623,
+    "title": "no data from client.user.rels[:organizations].get.data",
+    "user": {
+      "login": "Elmuch",
+      "id": 6125159,
+      "avatar_url": "https://avatars.githubusercontent.com/u/6125159?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Elmuch",
+      "html_url": "https://github.com/Elmuch",
+      "followers_url": "https://api.github.com/users/Elmuch/followers",
+      "following_url": "https://api.github.com/users/Elmuch/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Elmuch/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Elmuch/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Elmuch/subscriptions",
+      "organizations_url": "https://api.github.com/users/Elmuch/orgs",
+      "repos_url": "https://api.github.com/users/Elmuch/repos",
+      "events_url": "https://api.github.com/users/Elmuch/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Elmuch/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 2,
+    "created_at": "2015-07-08T18:07:27Z",
+    "updated_at": "2015-07-09T15:45:23Z",
+    "closed_at": null,
+    "body": "This endpoint was working for me until recently. Is there something I am missing? "
+  

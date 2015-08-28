@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/14",
+    "labels_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/14/labels{/name}",
+    "comments_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/14/comments",
+    "events_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/14/events",
+    "html_url": "https://github.com/michaeldfallen/git-radar/issues/14",
+    "id": 103304743,
+    "number": 14,
+    "title": "Does git-radar set background colors?",
+    "user": {
+      "login": "eproxus",
+      "id": 112878,
+      "avatar_url": "https://avatars.githubusercontent.com/u/112878?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/eproxus",
+      "html_url": "https://github.com/eproxus",
+      "followers_url": "https://api.github.com/users/eproxus/followers",
+      "following_url": "https://api.github.com/users/eproxus/following{/other_user}",
+      "gists_url": "https://api.github.com/users/eproxus/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/eproxus/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/eproxus/subscriptions",
+      "organizations_url": "https://api.github.com/users/eproxus/orgs",
+      "repos_url": "https://api.github.com/users/eproxus/repos",
+      "events_url": "https://api.github.com/users/eproxus/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/eproxus/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2015-08-26T15:56:01Z",
+    "updated_at": "2015-08-27T08:12:43Z",
+    "closed_at": null,
+    "body": "I'm trying to replace my home grown version with `git-radar` but I'm having problems with background colors. Here's what my old theme looks like:\r\n\r\n![](https://github.com/eproxus/pad.zsh-theme/raw/master/screenshot.png)\r\n\r\nAnd here's what I see using `git-radar`:\r\n\r\n<img width=\"561\" alt=\"screen shot 2015-08-26 at 17 53 45\" src=\"https://cloud.githubusercontent.com/assets/112878/9498715/70be20f8-4c1b-11e5-984c-cd08b633aff0.png\">\r\n\r\nHere's how I set the background and the text from `git-radar`:\r\n\r\n    echo \"%{$BG[019]%}$(git-radar --zsh --fetch) \"\r\n\r\nSo, it looks like the background is set on the branch name? Is this correct?"
+  

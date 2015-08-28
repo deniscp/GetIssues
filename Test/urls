@@ -1,0 +1,10 @@
+0) java Test https://api.github.com/orgs/octokit/repos 01-07-2015 2> log
+1) java Test https://api.github.com/users/deniscp/repos 01-07-2015 2> log (nessun issue)
+2) java Test https://api.github.com/orgs/Qihoo360/repos 01-07-2015 2> log
+3) java Test https://api.github.com/users/h2non/repos 01-07-2015 2> log
+4) java Test https://api.github.com/orgs/flarum/repos 01-07-2015 2> log
+5) java Test https://api.github.com/users/fouber/repos 01-07-2015 2> log
+6) java Test https://api.github.com/orgs/lfit/repos 01-07-2015 2> log
+7) java Test https://api.github.com/user/michaeldfallen/repos 01-07-2015 2> log
+8) java Test https://api.github.com/orgs/getlantern/repos 01-07-2015 2> log
+9) java Test https://api.github.com/orgs/mit-nlp/repos 01-07-2015 2> log

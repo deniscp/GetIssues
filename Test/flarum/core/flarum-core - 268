@@ -1,0 +1,50 @@
+
+    "url": "https://api.github.com/repos/flarum/core/issues/268",
+    "labels_url": "https://api.github.com/repos/flarum/core/issues/268/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/core/issues/268/comments",
+    "events_url": "https://api.github.com/repos/flarum/core/issues/268/events",
+    "html_url": "https://github.com/flarum/core/issues/268",
+    "id": 103513065,
+    "number": 268,
+    "title": "Improve admin CP appearance page, allow logo upload",
+    "user": {
+      "login": "tobscure",
+      "id": 128862,
+      "avatar_url": "https://avatars.githubusercontent.com/u/128862?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tobscure",
+      "html_url": "https://github.com/tobscure",
+      "followers_url": "https://api.github.com/users/tobscure/followers",
+      "following_url": "https://api.github.com/users/tobscure/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tobscure/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tobscure/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tobscure/subscriptions",
+      "organizations_url": "https://api.github.com/users/tobscure/orgs",
+      "repos_url": "https://api.github.com/users/tobscure/repos",
+      "events_url": "https://api.github.com/users/tobscure/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tobscure/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "url": "https://api.github.com/repos/flarum/core/labels/Design",
+        "name": "Design",
+        "color": "fbca04"
+      },
+      {
+        "url": "https://api.github.com/repos/flarum/core/labels/Feature",
+        "name": "Feature",
+        "color": "009800"
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-27T13:45:23Z",
+    "updated_at": "2015-08-28T03:56:29Z",
+    "closed_at": null,
+    "body": "We want to allow uploading a custom favicon and header image. Additionally it'd be cool to show a live preview (using an SVG) of what the color scheme will look like. Something like this:\r\n\r\n![screen shot 2015-08-28 at 1 26 03 pm](https://cloud.githubusercontent.com/assets/128862/9538854/60f6fee2-4d88-11e5-9d42-7457c93209e0.png)\r\n\r\nWhat needs to be done:\r\n* Add API endpoints for uploading a favicon and a header image.\r\n* Redesign/add fields to the AppearancePage component.\r\n* Design a simple SVG showing Flarum's basic layout, and give the appropriate elements class names so they can have their colors changed via JavaScript.\r\n* Hook up the color buttons in the AppearancePage to update the preview SVG."
+  

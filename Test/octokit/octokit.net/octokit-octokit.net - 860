@@ -1,0 +1,47 @@
+
+    "url": "https://api.github.com/repos/octokit/octokit.net/issues/860",
+    "labels_url": "https://api.github.com/repos/octokit/octokit.net/issues/860/labels{/name}",
+    "comments_url": "https://api.github.com/repos/octokit/octokit.net/issues/860/comments",
+    "events_url": "https://api.github.com/repos/octokit/octokit.net/issues/860/events",
+    "html_url": "https://github.com/octokit/octokit.net/pull/860",
+    "id": 99113211,
+    "number": 860,
+    "title": "Tidying up some code",
+    "user": {
+      "login": "Haacked",
+      "id": 19977,
+      "avatar_url": "https://avatars.githubusercontent.com/u/19977?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Haacked",
+      "html_url": "https://github.com/Haacked",
+      "followers_url": "https://api.github.com/users/Haacked/followers",
+      "following_url": "https://api.github.com/users/Haacked/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Haacked/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Haacked/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Haacked/subscriptions",
+      "organizations_url": "https://api.github.com/users/Haacked/orgs",
+      "repos_url": "https://api.github.com/users/Haacked/repos",
+      "events_url": "https://api.github.com/users/Haacked/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Haacked/received_events",
+      "type": "User",
+      "site_admin": true
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 8,
+    "created_at": "2015-08-05T04:24:12Z",
+    "updated_at": "2015-08-06T11:16:10Z",
+    "closed_at": null,
+    "pull_request": {
+      "url": "https://api.github.com/repos/octokit/octokit.net/pulls/860",
+      "html_url": "https://github.com/octokit/octokit.net/pull/860",
+      "diff_url": "https://github.com/octokit/octokit.net/pull/860.diff",
+      "patch_url": "https://github.com/octokit/octokit.net/pull/860.patch"
+    },
+    "body": "Just tidying up some code"
+  

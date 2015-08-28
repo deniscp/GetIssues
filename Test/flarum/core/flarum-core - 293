@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/flarum/core/issues/293",
+    "labels_url": "https://api.github.com/repos/flarum/core/issues/293/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/core/issues/293/comments",
+    "events_url": "https://api.github.com/repos/flarum/core/issues/293/events",
+    "html_url": "https://github.com/flarum/core/issues/293",
+    "id": 103684703,
+    "number": 293,
+    "title": "Embed Youtube, Images into Posts ",
+    "user": {
+      "login": "christicehurst",
+      "id": 13689703,
+      "avatar_url": "https://avatars.githubusercontent.com/u/13689703?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/christicehurst",
+      "html_url": "https://github.com/christicehurst",
+      "followers_url": "https://api.github.com/users/christicehurst/followers",
+      "following_url": "https://api.github.com/users/christicehurst/following{/other_user}",
+      "gists_url": "https://api.github.com/users/christicehurst/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/christicehurst/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/christicehurst/subscriptions",
+      "organizations_url": "https://api.github.com/users/christicehurst/orgs",
+      "repos_url": "https://api.github.com/users/christicehurst/repos",
+      "events_url": "https://api.github.com/users/christicehurst/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/christicehurst/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2015-08-28T09:33:36Z",
+    "updated_at": "2015-08-28T14:28:51Z",
+    "closed_at": null,
+    "body": "If Flarum wants to be modern than this a needed featured. Wordpress has it and it's a drag and drop for Facebook as well. Currently I can;t get my Youtube shows to appear so people can't watch from the forum itself. "
+  

@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/Qihoo360/Atlas/issues/59",
+    "labels_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/59/labels{/name}",
+    "comments_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/59/comments",
+    "events_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/59/events",
+    "html_url": "https://github.com/Qihoo360/Atlas/issues/59",
+    "id": 98338399,
+    "number": 59,
+    "title": "Atlas不能执行show WARNINGS语句？",
+    "user": {
+      "login": "tangming2010",
+      "id": 7693121,
+      "avatar_url": "https://avatars.githubusercontent.com/u/7693121?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tangming2010",
+      "html_url": "https://github.com/tangming2010",
+      "followers_url": "https://api.github.com/users/tangming2010/followers",
+      "following_url": "https://api.github.com/users/tangming2010/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tangming2010/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tangming2010/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tangming2010/subscriptions",
+      "organizations_url": "https://api.github.com/users/tangming2010/orgs",
+      "repos_url": "https://api.github.com/users/tangming2010/repos",
+      "events_url": "https://api.github.com/users/tangming2010/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tangming2010/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2015-07-31T08:07:59Z",
+    "updated_at": "2015-07-31T09:05:06Z",
+    "closed_at": null,
+    "body": "我安装了Atlas环境，在连接Atlas时，使用正常的SQL能查询出结果，但执行show WARNINGS时，系统提示错误：ERROR 1105 (HY000): Proxy Warning - near \"WARNINGS\": syntax error\r\n\r\n我同样用命令行连接到Mysql服务上时，可以正常执行show WARNINGS。帮帮我，Thanks！"
+  

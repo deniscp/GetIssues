@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/lfit/itpol/issues/4",
+    "labels_url": "https://api.github.com/repos/lfit/itpol/issues/4/labels{/name}",
+    "comments_url": "https://api.github.com/repos/lfit/itpol/issues/4/comments",
+    "events_url": "https://api.github.com/repos/lfit/itpol/issues/4/events",
+    "html_url": "https://github.com/lfit/itpol/issues/4",
+    "id": 103733923,
+    "number": 4,
+    "title": "Coreboot is missing as alternate firmware option.",
+    "user": {
+      "login": "zaolin",
+      "id": 5386290,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5386290?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zaolin",
+      "html_url": "https://github.com/zaolin",
+      "followers_url": "https://api.github.com/users/zaolin/followers",
+      "following_url": "https://api.github.com/users/zaolin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zaolin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zaolin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zaolin/subscriptions",
+      "organizations_url": "https://api.github.com/users/zaolin/orgs",
+      "repos_url": "https://api.github.com/users/zaolin/repos",
+      "events_url": "https://api.github.com/users/zaolin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zaolin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-28T14:57:46Z",
+    "updated_at": "2015-08-28T14:57:46Z",
+    "closed_at": null,
+    "body": "Hi,\r\n\r\ncoreboot is an alternate firmware for different platforms. See www.coreboot.org .\r\nIt also possible with coreboot to build a secure boot based on GRUB2. On chromebooks you can use chrome os firmware which is based on coreboot. \r\nSee https://chromium.googlesource.com/chromiumos/third_party/coreboot/ .\r\nGoogle provides all firmware as open source even the embedded controller firmware is open.\r\nSee https://chromium.googlesource.com/chromiumos/platform/ec/ .\r\nI guess the chromebooks are the most secure and open solution for firmware security...\r\nMaybe this should be listed as alternative option for running a safe linux workstation\r\n\r\nRegards Zaolin"
+  

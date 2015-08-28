@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/octokit/octokit.rb/issues/624",
+    "labels_url": "https://api.github.com/repos/octokit/octokit.rb/issues/624/labels{/name}",
+    "comments_url": "https://api.github.com/repos/octokit/octokit.rb/issues/624/comments",
+    "events_url": "https://api.github.com/repos/octokit/octokit.rb/issues/624/events",
+    "html_url": "https://github.com/octokit/octokit.rb/issues/624",
+    "id": 94113100,
+    "number": 624,
+    "title": "One link is broken in CONTRIBUTING.md.",
+    "user": {
+      "login": "Kakakakakku",
+      "id": 1573290,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1573290?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Kakakakakku",
+      "html_url": "https://github.com/Kakakakakku",
+      "followers_url": "https://api.github.com/users/Kakakakakku/followers",
+      "following_url": "https://api.github.com/users/Kakakakakku/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Kakakakakku/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Kakakakakku/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Kakakakakku/subscriptions",
+      "organizations_url": "https://api.github.com/users/Kakakakakku/orgs",
+      "repos_url": "https://api.github.com/users/Kakakakakku/repos",
+      "events_url": "https://api.github.com/users/Kakakakakku/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Kakakakakku/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-07-09T17:56:28Z",
+    "updated_at": "2015-07-09T17:56:28Z",
+    "closed_at": null,
+    "body": "Hi, I found one link is broken in CONTRIBUTING.md below.\r\nBut, I don't know which link is better.\r\n\r\n```\r\n3. Create a topic branch.\r\nhttps://learn.github.com/p/branching.html\r\n```\r\n\r\nI checked \"Internet Archive\" for this link.\r\n\r\n* https://web.archive.org/web/*/http://learn.github.com/p/branching.html\r\n\r\nMaybe, it was moved to YouTube videos.\r\n\r\n* https://www.youtube.com/user/GitHubGuides\r\n\r\n\r\nThanks a lot."
+  

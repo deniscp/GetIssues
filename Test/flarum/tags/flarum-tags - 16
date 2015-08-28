@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/flarum/tags/issues/16",
+    "labels_url": "https://api.github.com/repos/flarum/tags/issues/16/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/tags/issues/16/comments",
+    "events_url": "https://api.github.com/repos/flarum/tags/issues/16/events",
+    "html_url": "https://github.com/flarum/tags/issues/16",
+    "id": 103636467,
+    "number": 16,
+    "title": "Drag n Drop Issues",
+    "user": {
+      "login": "tobscure",
+      "id": 128862,
+      "avatar_url": "https://avatars.githubusercontent.com/u/128862?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tobscure",
+      "html_url": "https://github.com/tobscure",
+      "followers_url": "https://api.github.com/users/tobscure/followers",
+      "following_url": "https://api.github.com/users/tobscure/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tobscure/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tobscure/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tobscure/subscriptions",
+      "organizations_url": "https://api.github.com/users/tobscure/orgs",
+      "repos_url": "https://api.github.com/users/tobscure/repos",
+      "events_url": "https://api.github.com/users/tobscure/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tobscure/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-28T02:47:42Z",
+    "updated_at": "2015-08-28T02:47:42Z",
+    "closed_at": null,
+    "body": "_From @Felli on August 27, 2015 16:8_\n\nThere are some drag n drop issues that can happen after installing\r\nExample: Deleting the General tag then creating a new tag gives a possible drag n drop bug that will break the tag selection as well (I can't count for everyone but this has happened to me, even tried a hard refresh as well as clearing the browser.)\n\n_Copied from original issue: flarum/core#270_"
+  

@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/12",
+    "labels_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/12/labels{/name}",
+    "comments_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/12/comments",
+    "events_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/12/events",
+    "html_url": "https://github.com/michaeldfallen/git-radar/issues/12",
+    "id": 103278031,
+    "number": 12,
+    "title": "Colors",
+    "user": {
+      "login": "apas",
+      "id": 347450,
+      "avatar_url": "https://avatars.githubusercontent.com/u/347450?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/apas",
+      "html_url": "https://github.com/apas",
+      "followers_url": "https://api.github.com/users/apas/followers",
+      "following_url": "https://api.github.com/users/apas/following{/other_user}",
+      "gists_url": "https://api.github.com/users/apas/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/apas/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/apas/subscriptions",
+      "organizations_url": "https://api.github.com/users/apas/orgs",
+      "repos_url": "https://api.github.com/users/apas/repos",
+      "events_url": "https://api.github.com/users/apas/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/apas/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 11,
+    "created_at": "2015-08-26T14:05:10Z",
+    "updated_at": "2015-08-28T15:34:01Z",
+    "closed_at": null,
+    "body": "A better color palette (or a collection of) to support existing terminal color themes would be very much appreciated.\r\n\r\n![](https://photos-6.dropbox.com/t/2/AAA-yehqWCUZHMEvaiaj90CqtuLwaVyFi6tnBEKDaZR3uA/12/353609/png/32x32/1/1440604800/0/2/Screenshot%202015-08-26%2009.59.40.png/CMnKFSABIAIgAyAEIAUgBiAHKAEoAigDKAc/8rmiYgHTDU-WlMwpMwIFzfyJFNeb5jL66mnUrL1Ce_M?size=1024x768&size_mode=2)"
+  

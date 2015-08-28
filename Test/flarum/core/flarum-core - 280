@@ -1,0 +1,45 @@
+
+    "url": "https://api.github.com/repos/flarum/core/issues/280",
+    "labels_url": "https://api.github.com/repos/flarum/core/issues/280/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/core/issues/280/comments",
+    "events_url": "https://api.github.com/repos/flarum/core/issues/280/events",
+    "html_url": "https://github.com/flarum/core/issues/280",
+    "id": 103640259,
+    "number": 280,
+    "title": "Logging in without activating account shows \"login details are incorrect\" error",
+    "user": {
+      "login": "ralphskie",
+      "id": 5318148,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5318148?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ralphskie",
+      "html_url": "https://github.com/ralphskie",
+      "followers_url": "https://api.github.com/users/ralphskie/followers",
+      "following_url": "https://api.github.com/users/ralphskie/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ralphskie/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ralphskie/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ralphskie/subscriptions",
+      "organizations_url": "https://api.github.com/users/ralphskie/orgs",
+      "repos_url": "https://api.github.com/users/ralphskie/repos",
+      "events_url": "https://api.github.com/users/ralphskie/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ralphskie/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "url": "https://api.github.com/repos/flarum/core/labels/Bug",
+        "name": "Bug",
+        "color": "e11d21"
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2015-08-28T03:26:44Z",
+    "updated_at": "2015-08-28T03:47:48Z",
+    "closed_at": null,
+    "body": "1. [SIGN UP] There is no prompt or message for the user that the email is existing on the DB.\r\n\r\n![2015-08-28 11_17_30-developer tools - http___localhost_flarum-0 1 0-beta_](https://cloud.githubusercontent.com/assets/5318148/9538413/b873e3ea-4d76-11e5-8df4-b53dfdffcac9.jpg)\r\n\r\n2. [LOGIN] - when logging in without first activating your account. The system shows this error  \"Youre login details are incorrect\", must be \"Please activate you account first\"?or something else"
+  

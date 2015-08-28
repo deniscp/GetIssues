@@ -1,0 +1,47 @@
+
+    "url": "https://api.github.com/repos/mit-nlp/Text.jl/issues/2",
+    "labels_url": "https://api.github.com/repos/mit-nlp/Text.jl/issues/2/labels{/name}",
+    "comments_url": "https://api.github.com/repos/mit-nlp/Text.jl/issues/2/comments",
+    "events_url": "https://api.github.com/repos/mit-nlp/Text.jl/issues/2/events",
+    "html_url": "https://github.com/mit-nlp/Text.jl/pull/2",
+    "id": 100361404,
+    "number": 2,
+    "title": "- update to ngrams",
+    "user": {
+      "login": "esalesky",
+      "id": 4117932,
+      "avatar_url": "https://avatars.githubusercontent.com/u/4117932?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/esalesky",
+      "html_url": "https://github.com/esalesky",
+      "followers_url": "https://api.github.com/users/esalesky/followers",
+      "following_url": "https://api.github.com/users/esalesky/following{/other_user}",
+      "gists_url": "https://api.github.com/users/esalesky/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/esalesky/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/esalesky/subscriptions",
+      "organizations_url": "https://api.github.com/users/esalesky/orgs",
+      "repos_url": "https://api.github.com/users/esalesky/repos",
+      "events_url": "https://api.github.com/users/esalesky/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/esalesky/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-11T17:13:34Z",
+    "updated_at": "2015-08-11T17:13:34Z",
+    "closed_at": null,
+    "pull_request": {
+      "url": "https://api.github.com/repos/mit-nlp/Text.jl/pulls/2",
+      "html_url": "https://github.com/mit-nlp/Text.jl/pull/2",
+      "diff_url": "https://github.com/mit-nlp/Text.jl/pull/2.diff",
+      "patch_url": "https://github.com/mit-nlp/Text.jl/pull/2.patch"
+    },
+    "body": ""
+  

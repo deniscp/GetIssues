@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/13",
+    "labels_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/13/labels{/name}",
+    "comments_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/13/comments",
+    "events_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/13/events",
+    "html_url": "https://github.com/michaeldfallen/git-radar/issues/13",
+    "id": 103288741,
+    "number": 13,
+    "title": "brackets showing up instead of normal prompt representation",
+    "user": {
+      "login": "btabibian",
+      "id": 730361,
+      "avatar_url": "https://avatars.githubusercontent.com/u/730361?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/btabibian",
+      "html_url": "https://github.com/btabibian",
+      "followers_url": "https://api.github.com/users/btabibian/followers",
+      "following_url": "https://api.github.com/users/btabibian/following{/other_user}",
+      "gists_url": "https://api.github.com/users/btabibian/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/btabibian/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/btabibian/subscriptions",
+      "organizations_url": "https://api.github.com/users/btabibian/orgs",
+      "repos_url": "https://api.github.com/users/btabibian/repos",
+      "events_url": "https://api.github.com/users/btabibian/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/btabibian/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 14,
+    "created_at": "2015-08-26T14:53:04Z",
+    "updated_at": "2015-08-26T16:15:54Z",
+    "closed_at": null,
+    "body": "Hi,\r\n\r\nWhen I add  ```export PS1=\"\\W\\$(~/git-radar/git-radar --bash) \"``` to my .bashrc I get the following:\r\n\r\n```py_ \\[\\]git:(\\[\\]\\[\\]master\\[\\]\\[\\])\\[\\] 3\\[\\]M\\[\\] 59\\[\\]A\\[\\]```\r\n\r\nWhere ```py_``` is my current direcotry.\r\n\r\nWhen I add ```export PS1=\"\\W$(~/git-radar/git-radar --bash) \"``` it shows the correct format but no longer updates. I suppose this has to do with static executation and lazy evaluation of bash for PS1 and thus not the correct way of using your script.\r\n\r\nI will appreciate if you could help.\r\n\r\nP.s the package is fantastic. Cannot wait to use it and possibly contribute back."
+  

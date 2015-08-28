@@ -1,0 +1,45 @@
+
+    "url": "https://api.github.com/repos/flarum/core/issues/284",
+    "labels_url": "https://api.github.com/repos/flarum/core/issues/284/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/core/issues/284/comments",
+    "events_url": "https://api.github.com/repos/flarum/core/issues/284/events",
+    "html_url": "https://github.com/flarum/core/issues/284",
+    "id": 103644403,
+    "number": 284,
+    "title": "Small issue with AJAX, XMLHttpRequest and CORS",
+    "user": {
+      "login": "d1a8lo24",
+      "id": 5483411,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5483411?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/d1a8lo24",
+      "html_url": "https://github.com/d1a8lo24",
+      "followers_url": "https://api.github.com/users/d1a8lo24/followers",
+      "following_url": "https://api.github.com/users/d1a8lo24/following{/other_user}",
+      "gists_url": "https://api.github.com/users/d1a8lo24/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/d1a8lo24/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/d1a8lo24/subscriptions",
+      "organizations_url": "https://api.github.com/users/d1a8lo24/orgs",
+      "repos_url": "https://api.github.com/users/d1a8lo24/repos",
+      "events_url": "https://api.github.com/users/d1a8lo24/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/d1a8lo24/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "url": "https://api.github.com/repos/flarum/core/labels/Bug",
+        "name": "Bug",
+        "color": "e11d21"
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-28T04:18:54Z",
+    "updated_at": "2015-08-28T04:28:18Z",
+    "closed_at": null,
+    "body": "If you installed the forum in the root or in a folder and access your site either via http://example.com or http://example.com/flarum without the \"www\" or subdomain\r\n\r\nYou might have encounter a small problem when clicking to a discussion in this case no content was loaded.\r\n\r\nUsing firebug or your developer's browser tools there is an error that pops up on your javascript debugging console, in this case you may see something like this.\r\n\r\nXMLHttpRequest cannot load http://www.example.com/api/discussions/1?page%5Bnear%5D=0. Invalid HTTP status code 500\r\n\r\nor \r\n\r\nResource from origin 'http://www.example.com' has been blocked from loading by Cross-Origin Resource Sharing policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://example.com' is therefore not allowed access.\r\n\r\nThis happens because when Flarum starts an ajax call to the API it does it by using the \"www\" in the URL so if your site is http://example.com and you click on a discussion it will call the API via ajax to http://www.example.com/api/discussions/ which it is not allowed since its a security issue in this case is because they are not the same domain.\r\n\r\nAnyway I think just a small edit somewhere where the URL writing is should fix this so will leave it to the experts at Flarum.\r\n\r\nBut at the moment what you can do is use the htaccess file to rewrite how people access your site in this case by adding the www.\r\n\r\nIn my case I am using Apache 2.2 so I added the following code to my htaccess file.\r\n\r\n    <IfModule mod_rewrite.c>\r\n      RewriteEngine On\r\n      # Rewrite \"domain.com -> www.domain.com\"\r\n     RewriteCond %{HTTP_HOST} !^www\\..+$ [NC]\r\n     RewriteCond %{HTTP_HOST} (.+)$ [NC]\r\n     RewriteRule ^(.*)$ http://www.%1/$1 [R=301,L]\r\n\r\n    </IfModule>"
+  

@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/octokit/octokit.net/issues/859",
+    "labels_url": "https://api.github.com/repos/octokit/octokit.net/issues/859/labels{/name}",
+    "comments_url": "https://api.github.com/repos/octokit/octokit.net/issues/859/comments",
+    "events_url": "https://api.github.com/repos/octokit/octokit.net/issues/859/events",
+    "html_url": "https://github.com/octokit/octokit.net/issues/859",
+    "id": 99025336,
+    "number": 859,
+    "title": "Client Interactive Token Acquisition",
+    "user": {
+      "login": "whoisj",
+      "id": 11578325,
+      "avatar_url": "https://avatars.githubusercontent.com/u/11578325?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/whoisj",
+      "html_url": "https://github.com/whoisj",
+      "followers_url": "https://api.github.com/users/whoisj/followers",
+      "following_url": "https://api.github.com/users/whoisj/following{/other_user}",
+      "gists_url": "https://api.github.com/users/whoisj/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/whoisj/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/whoisj/subscriptions",
+      "organizations_url": "https://api.github.com/users/whoisj/orgs",
+      "repos_url": "https://api.github.com/users/whoisj/repos",
+      "events_url": "https://api.github.com/users/whoisj/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/whoisj/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 6,
+    "created_at": "2015-08-04T18:04:59Z",
+    "updated_at": "2015-08-07T16:54:40Z",
+    "closed_at": null,
+    "body": "Is there a way to perform client-side interactive token acquisition?\r\n\r\nFor example, is there a way from within an app to acquire a personal access token scoped to say pull request viewing from the command line or from a Windows Form application?\r\n\r\nI'm not seeing an obvious way to do so.\r\n\r\nAny help here would be much appreciated. Thanks!"
+  

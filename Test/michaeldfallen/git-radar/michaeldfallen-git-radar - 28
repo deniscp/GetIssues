@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/28",
+    "labels_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/28/labels{/name}",
+    "comments_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/28/comments",
+    "events_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/28/events",
+    "html_url": "https://github.com/michaeldfallen/git-radar/issues/28",
+    "id": 103577387,
+    "number": 28,
+    "title": "Prompt not updating - OSX - zsh",
+    "user": {
+      "login": "dsandstrom",
+      "id": 1400414,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1400414?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dsandstrom",
+      "html_url": "https://github.com/dsandstrom",
+      "followers_url": "https://api.github.com/users/dsandstrom/followers",
+      "following_url": "https://api.github.com/users/dsandstrom/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dsandstrom/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dsandstrom/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dsandstrom/subscriptions",
+      "organizations_url": "https://api.github.com/users/dsandstrom/orgs",
+      "repos_url": "https://api.github.com/users/dsandstrom/repos",
+      "events_url": "https://api.github.com/users/dsandstrom/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dsandstrom/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 4,
+    "created_at": "2015-08-27T19:25:07Z",
+    "updated_at": "2015-08-28T15:10:11Z",
+    "closed_at": null,
+    "body": "The prompt doesn't update when I change branches, make changes, or anything else.  However, it does work when using bash.  The only way I can get it to change is by opening a new shell window or running `exec $SHELL`."
+  

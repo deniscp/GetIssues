@@ -1,0 +1,50 @@
+
+    "url": "https://api.github.com/repos/flarum/core/issues/276",
+    "labels_url": "https://api.github.com/repos/flarum/core/issues/276/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/core/issues/276/comments",
+    "events_url": "https://api.github.com/repos/flarum/core/issues/276/events",
+    "html_url": "https://github.com/flarum/core/issues/276",
+    "id": 103616721,
+    "number": 276,
+    "title": "Ctrl/Cmd + Enter to send comment",
+    "user": {
+      "login": "lukelarris",
+      "id": 1342461,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1342461?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lukelarris",
+      "html_url": "https://github.com/lukelarris",
+      "followers_url": "https://api.github.com/users/lukelarris/followers",
+      "following_url": "https://api.github.com/users/lukelarris/following{/other_user}",
+      "gists_url": "https://api.github.com/users/lukelarris/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/lukelarris/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/lukelarris/subscriptions",
+      "organizations_url": "https://api.github.com/users/lukelarris/orgs",
+      "repos_url": "https://api.github.com/users/lukelarris/repos",
+      "events_url": "https://api.github.com/users/lukelarris/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/lukelarris/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "url": "https://api.github.com/repos/flarum/core/labels/Feature",
+        "name": "Feature",
+        "color": "009800"
+      },
+      {
+        "url": "https://api.github.com/repos/flarum/core/labels/Good%20for%20New%20Contributors",
+        "name": "Good for New Contributors",
+        "color": "c7def8"
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2015-08-27T23:38:35Z",
+    "updated_at": "2015-08-28T11:04:29Z",
+    "closed_at": null,
+    "body": "Can we have Ctrl/Cmd + Enter bound to send a comment? I love doing that to send an email in Gmail, and I think it would be really cool on Flarum."
+  

@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/fouber/fis-java-jsp/issues/4",
+    "labels_url": "https://api.github.com/repos/fouber/fis-java-jsp/issues/4/labels{/name}",
+    "comments_url": "https://api.github.com/repos/fouber/fis-java-jsp/issues/4/comments",
+    "events_url": "https://api.github.com/repos/fouber/fis-java-jsp/issues/4/events",
+    "html_url": "https://github.com/fouber/fis-java-jsp/issues/4",
+    "id": 95390305,
+    "number": 4,
+    "title": "jsp中引用的静态文件路径写绝对路径不行吗",
+    "user": {
+      "login": "chengtianshuang",
+      "id": 10610190,
+      "avatar_url": "https://avatars.githubusercontent.com/u/10610190?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chengtianshuang",
+      "html_url": "https://github.com/chengtianshuang",
+      "followers_url": "https://api.github.com/users/chengtianshuang/followers",
+      "following_url": "https://api.github.com/users/chengtianshuang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chengtianshuang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chengtianshuang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chengtianshuang/subscriptions",
+      "organizations_url": "https://api.github.com/users/chengtianshuang/orgs",
+      "repos_url": "https://api.github.com/users/chengtianshuang/repos",
+      "events_url": "https://api.github.com/users/chengtianshuang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chengtianshuang/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-07-16T09:22:00Z",
+    "updated_at": "2015-07-16T09:22:00Z",
+    "closed_at": null,
+    "body": ""
+  

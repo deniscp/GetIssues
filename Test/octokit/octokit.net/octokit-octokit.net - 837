@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/octokit/octokit.net/issues/837",
+    "labels_url": "https://api.github.com/repos/octokit/octokit.net/issues/837/labels{/name}",
+    "comments_url": "https://api.github.com/repos/octokit/octokit.net/issues/837/comments",
+    "events_url": "https://api.github.com/repos/octokit/octokit.net/issues/837/events",
+    "html_url": "https://github.com/octokit/octokit.net/issues/837",
+    "id": 95123278,
+    "number": 837,
+    "title": "ASP.NET Web Forms",
+    "user": {
+      "login": "wdhodges",
+      "id": 11448029,
+      "avatar_url": "https://avatars.githubusercontent.com/u/11448029?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wdhodges",
+      "html_url": "https://github.com/wdhodges",
+      "followers_url": "https://api.github.com/users/wdhodges/followers",
+      "following_url": "https://api.github.com/users/wdhodges/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wdhodges/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wdhodges/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wdhodges/subscriptions",
+      "organizations_url": "https://api.github.com/users/wdhodges/orgs",
+      "repos_url": "https://api.github.com/users/wdhodges/repos",
+      "events_url": "https://api.github.com/users/wdhodges/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wdhodges/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2015-07-15T07:12:42Z",
+    "updated_at": "2015-07-15T17:30:39Z",
+    "closed_at": null,
+    "body": "I've  been searching and searching but I can't find out how to use this package to implement into an ASP.NET web form. Am I missing something? I'm trying to figure out where some tutorials are. I'm teaching my self this with no formal coding education. Any help, much appreciated. "
+  

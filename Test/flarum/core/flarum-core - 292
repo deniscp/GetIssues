@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/flarum/core/issues/292",
+    "labels_url": "https://api.github.com/repos/flarum/core/issues/292/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/core/issues/292/comments",
+    "events_url": "https://api.github.com/repos/flarum/core/issues/292/events",
+    "html_url": "https://github.com/flarum/core/issues/292",
+    "id": 103674032,
+    "number": 292,
+    "title": "Bug Can not access API or Admin page",
+    "user": {
+      "login": "robrotheram",
+      "id": 3533362,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3533362?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/robrotheram",
+      "html_url": "https://github.com/robrotheram",
+      "followers_url": "https://api.github.com/users/robrotheram/followers",
+      "following_url": "https://api.github.com/users/robrotheram/following{/other_user}",
+      "gists_url": "https://api.github.com/users/robrotheram/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/robrotheram/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/robrotheram/subscriptions",
+      "organizations_url": "https://api.github.com/users/robrotheram/orgs",
+      "repos_url": "https://api.github.com/users/robrotheram/repos",
+      "events_url": "https://api.github.com/users/robrotheram/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/robrotheram/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-28T08:49:13Z",
+    "updated_at": "2015-08-28T08:49:13Z",
+    "closed_at": null,
+    "body": "Hello Guys got a clean install of flarum but can not access the admin page or api pages causing most features to fail adding post etc. \r\n\r\nThe Apache error I am getting is \r\n\r\n    [Fri Aug 28 08:35:46.846842 2015] [negotiation:error] [pid 13] [client 172.17.0.8:52863] AH00687: Negotiation: discovered file(s) matching request: /var/www/site/api (None could be negotiated)., referer: http://forum.robrotheram.com/\r\n\r\n\r\nMy usecase is a little odd but sould not be causing any issues since I have other webapps running without any problem. My use case is running the webapp in a docker container that has apache installed and mod rewrite enabled. The container then sits behind a nginx container used as a load balancer. but even if I connect to the container directly I still get the same error so its not the ngix load balance causing the issue. \r\n\r\n    [Fri Aug 28 08:36:35.836774 2015] [negotiation:error] [pid 12] [client 172.17.0.8:52991] AH00687: Negotiation: discovered file(s) matching request: /var/www/site/admin (None could be negotiated)., referer: http://robrotheram.com:8087/ \r\n\r\nI made sure that the folders are writable since I set them to 777 (I know its bad but I was testing what was causing the problem)\r\n"
+  

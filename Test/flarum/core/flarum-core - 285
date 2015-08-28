@@ -1,0 +1,45 @@
+
+    "url": "https://api.github.com/repos/flarum/core/issues/285",
+    "labels_url": "https://api.github.com/repos/flarum/core/issues/285/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/core/issues/285/comments",
+    "events_url": "https://api.github.com/repos/flarum/core/issues/285/events",
+    "html_url": "https://github.com/flarum/core/issues/285",
+    "id": 103648398,
+    "number": 285,
+    "title": "Viewing topic doesn't jump to last unread post",
+    "user": {
+      "login": "tomdav999",
+      "id": 14009583,
+      "avatar_url": "https://avatars.githubusercontent.com/u/14009583?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tomdav999",
+      "html_url": "https://github.com/tomdav999",
+      "followers_url": "https://api.github.com/users/tomdav999/followers",
+      "following_url": "https://api.github.com/users/tomdav999/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tomdav999/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tomdav999/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tomdav999/subscriptions",
+      "organizations_url": "https://api.github.com/users/tomdav999/orgs",
+      "repos_url": "https://api.github.com/users/tomdav999/repos",
+      "events_url": "https://api.github.com/users/tomdav999/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tomdav999/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "url": "https://api.github.com/repos/flarum/core/labels/Bug",
+        "name": "Bug",
+        "color": "e11d21"
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-28T04:55:42Z",
+    "updated_at": "2015-08-28T05:04:18Z",
+    "closed_at": null,
+    "body": "For exampe, I am viewing the \"word association game\" thread with lots of posts.  The first unread post is 91.  When I click on the topic it takes me to post 91.  I then scroll down to view post 99.  I then view another topic and come back to the \"word association game\" thread.  It returns me to post 91.  Shouldn't it take me to post 100?  Also, I noticed that on my non-mobile device when clicking on the same topic in the left pane it behaves correctly each time I click on the topic (essentially paging down to the next unread post every time I click on the topic in the left pane) but as soon as I visit on another topic in the left pane and then come back it reverts to post 91.  Oddly enough on my mobile device (with no pane view) if I hit my browser's back button to view the list of topics and click on the topic again it takes me to post 92 (it doesn't page down like it does in pane view).  If I use flarum's back button to view the list of topics and click on the topic again it takes me to post 91."
+  

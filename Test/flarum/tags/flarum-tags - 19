@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/flarum/tags/issues/19",
+    "labels_url": "https://api.github.com/repos/flarum/tags/issues/19/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/tags/issues/19/comments",
+    "events_url": "https://api.github.com/repos/flarum/tags/issues/19/events",
+    "html_url": "https://github.com/flarum/tags/issues/19",
+    "id": 103652552,
+    "number": 19,
+    "title": "Creating a New Discussion in \"Sub Tag\" ",
+    "user": {
+      "login": "geoclicks",
+      "id": 5212833,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5212833?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/geoclicks",
+      "html_url": "https://github.com/geoclicks",
+      "followers_url": "https://api.github.com/users/geoclicks/followers",
+      "following_url": "https://api.github.com/users/geoclicks/following{/other_user}",
+      "gists_url": "https://api.github.com/users/geoclicks/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/geoclicks/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/geoclicks/subscriptions",
+      "organizations_url": "https://api.github.com/users/geoclicks/orgs",
+      "repos_url": "https://api.github.com/users/geoclicks/repos",
+      "events_url": "https://api.github.com/users/geoclicks/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/geoclicks/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2015-08-28T05:49:45Z",
+    "updated_at": "2015-08-28T07:22:15Z",
+    "closed_at": null,
+    "body": "Not sure of the terminology, but I'll do my best. :) \r\n\r\nWhen I click on the installation sub tag and try to create a new discussion, the compose window comes up with the installation sub tag. \r\n\r\nHowever when I try to post the discussion, it gives me an error saying I need to select a primary tag. Have to then click on the installation tag and then add the primary support tag.\r\n\r\nTo reproduce:\r\n\r\nClick on a random sub-tag ( http://discuss.flarum.org/t/tags ) and then create a new discussion. The compose window does not have the primary tag in it, which results in an error when submitting.\r\n\r\nThe primary tag can be added in by clicking on the sub tag in the compose window and then adding its parent tag.\r\n"
+  

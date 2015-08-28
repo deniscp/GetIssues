@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/flarum/likes/issues/1",
+    "labels_url": "https://api.github.com/repos/flarum/likes/issues/1/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/likes/issues/1/comments",
+    "events_url": "https://api.github.com/repos/flarum/likes/issues/1/events",
+    "html_url": "https://github.com/flarum/likes/issues/1",
+    "id": 103514859,
+    "number": 1,
+    "title": "Generalise to a \"Rate\" extension",
+    "user": {
+      "login": "tobscure",
+      "id": 128862,
+      "avatar_url": "https://avatars.githubusercontent.com/u/128862?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tobscure",
+      "html_url": "https://github.com/tobscure",
+      "followers_url": "https://api.github.com/users/tobscure/followers",
+      "following_url": "https://api.github.com/users/tobscure/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tobscure/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tobscure/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tobscure/subscriptions",
+      "organizations_url": "https://api.github.com/users/tobscure/orgs",
+      "repos_url": "https://api.github.com/users/tobscure/repos",
+      "events_url": "https://api.github.com/users/tobscure/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tobscure/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-27T13:52:38Z",
+    "updated_at": "2015-08-27T13:52:38Z",
+    "closed_at": null,
+    "body": "I think it might be good to make this extension a bit more powerful, allowing people to configure the following:\r\n\r\n* Optionally enable downvoting, giving each post a numeric score\r\n* Customize the terminology used, e.g. \"like\", \"agree\", \"+1\"\r\n* Customize the icon used, e.g. thumbs-up, heart, caret-up\r\n* Think about the concept of reputation/karma\r\n\r\nAt the same time, we want to keep things reasonably simple. Discuss.\r\n"
+  

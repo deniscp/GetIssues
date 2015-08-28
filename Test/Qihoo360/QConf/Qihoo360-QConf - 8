@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/Qihoo360/QConf/issues/8",
+    "labels_url": "https://api.github.com/repos/Qihoo360/QConf/issues/8/labels{/name}",
+    "comments_url": "https://api.github.com/repos/Qihoo360/QConf/issues/8/comments",
+    "events_url": "https://api.github.com/repos/Qihoo360/QConf/issues/8/events",
+    "html_url": "https://github.com/Qihoo360/QConf/issues/8",
+    "id": 93716808,
+    "number": 8,
+    "title": "cmake error",
+    "user": {
+      "login": "playgamelxh",
+      "id": 1527879,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1527879?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/playgamelxh",
+      "html_url": "https://github.com/playgamelxh",
+      "followers_url": "https://api.github.com/users/playgamelxh/followers",
+      "following_url": "https://api.github.com/users/playgamelxh/following{/other_user}",
+      "gists_url": "https://api.github.com/users/playgamelxh/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/playgamelxh/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/playgamelxh/subscriptions",
+      "organizations_url": "https://api.github.com/users/playgamelxh/orgs",
+      "repos_url": "https://api.github.com/users/playgamelxh/repos",
+      "events_url": "https://api.github.com/users/playgamelxh/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/playgamelxh/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 3,
+    "created_at": "2015-07-08T07:18:41Z",
+    "updated_at": "2015-07-14T02:09:33Z",
+    "closed_at": null,
+    "body": "-- This is unix\r\nCMake Error at driver/c++/CMakeLists.txt:29 (message):\r\n  message called with incorrect number of arguments\r\n-- Configuring incomplete, errors occurred!\r\nSee also \"/root/QConf/build/CMakeFiles/CMakeOutput.log\".\r\nSee also \"/root/QConf/build/CMakeFiles/CMakeError.log\".\r\n\r\nRun Build Command:/usr/bin/gmake \"cmTryCompileExec512667654/fast\"\r\n/usr/bin/gmake -f CMakeFiles/cmTryCompileExec512667654.dir/build.make CMakeFiles/cmTryCompileExec512667654.dir/build\r\ngmake[1]: Entering directory `/root/QConf/build/CMakeFiles/CMakeTmp'\r\n/usr/bin/cmake -E cmake_progress_report /root/QConf/build/CMakeFiles/CMakeTmp/CMakeFiles 1\r\nBuilding C object CMakeFiles/cmTryCompileExec512667654.dir/CheckFunctionExists.c.o\r\n/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec512667654.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c\r\nLinking C executable cmTryCompileExec512667654\r\n/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec512667654.dir/link.txt --verbose=1\r\n/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec512667654.dir/CheckFunctionExists.c.o  -o cmTryCompileExec512667654 -rdynamic -lpthreads\r\n/usr/bin/ld: cannot find -lpthreads\r\ncollect2: ld 返回 1\r\ngmake[1]: Leaving directory `/root/QConf/build/CMakeFiles/CMakeTmp'\r\ngmake[1]: *** [cmTryCompileExec512667654] 错误 1\r\ngmake: *** [cmTryCompileExec512667654/fast] 错误 2"
+  

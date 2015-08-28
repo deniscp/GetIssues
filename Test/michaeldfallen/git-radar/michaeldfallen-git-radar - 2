@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/2",
+    "labels_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/2/labels{/name}",
+    "comments_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/2/comments",
+    "events_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/2/events",
+    "html_url": "https://github.com/michaeldfallen/git-radar/issues/2",
+    "id": 94937758,
+    "number": 2,
+    "title": "Duplicate branches pointing to same upstream",
+    "user": {
+      "login": "michaeldfallen",
+      "id": 1446145,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1446145?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/michaeldfallen",
+      "html_url": "https://github.com/michaeldfallen",
+      "followers_url": "https://api.github.com/users/michaeldfallen/followers",
+      "following_url": "https://api.github.com/users/michaeldfallen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/michaeldfallen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/michaeldfallen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/michaeldfallen/subscriptions",
+      "organizations_url": "https://api.github.com/users/michaeldfallen/orgs",
+      "repos_url": "https://api.github.com/users/michaeldfallen/repos",
+      "events_url": "https://api.github.com/users/michaeldfallen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/michaeldfallen/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 1,
+    "created_at": "2015-07-14T12:41:34Z",
+    "updated_at": "2015-08-28T15:45:18Z",
+    "closed_at": null,
+    "body": "When you have two branches point to the same upstream branch you get the following message:\r\n\r\n```\r\nfatal: ambiguous argument 'origin/branch                                                                                               \r\norigin/branch...HEAD': unknown revision or path not in the working tree.\r\nUse '--' to separate paths from revisions, like this:\r\n'git <command> [<revision>...] -- [<file>...]'\r\nfatal: ambiguous argument 'origin/branch\r\norigin/branch...HEAD': unknown revision or path not in the working tree.\r\nUse '--' to separate paths from revisions, like this:\r\n'git <command> [<revision>...] -- [<file>...]'\r\n```\r\n\r\ndue to the `remote_branch_name` function having trouble finding which branch to follow\r\n"
+  

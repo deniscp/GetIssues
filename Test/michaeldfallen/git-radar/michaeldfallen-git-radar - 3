@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/3",
+    "labels_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/3/labels{/name}",
+    "comments_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/3/comments",
+    "events_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/3/events",
+    "html_url": "https://github.com/michaeldfallen/git-radar/issues/3",
+    "id": 103197118,
+    "number": 3,
+    "title": "Provide a way to change the remote tracking master branch",
+    "user": {
+      "login": "michaeldfallen",
+      "id": 1446145,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1446145?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/michaeldfallen",
+      "html_url": "https://github.com/michaeldfallen",
+      "followers_url": "https://api.github.com/users/michaeldfallen/followers",
+      "following_url": "https://api.github.com/users/michaeldfallen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/michaeldfallen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/michaeldfallen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/michaeldfallen/subscriptions",
+      "organizations_url": "https://api.github.com/users/michaeldfallen/orgs",
+      "repos_url": "https://api.github.com/users/michaeldfallen/repos",
+      "events_url": "https://api.github.com/users/michaeldfallen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/michaeldfallen/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2015-08-26T07:30:18Z",
+    "updated_at": "2015-08-28T02:02:51Z",
+    "closed_at": null,
+    "body": "Currently `origin/master` is hardcoded. To support git-flow we should really be able to configure this. A file in .git that contains the ref to target (defaulted to `origin/master` if not present) should do the job."
+  

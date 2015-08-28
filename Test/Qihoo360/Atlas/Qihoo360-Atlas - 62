@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/Qihoo360/Atlas/issues/62",
+    "labels_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/62/labels{/name}",
+    "comments_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/62/comments",
+    "events_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/62/events",
+    "html_url": "https://github.com/Qihoo360/Atlas/issues/62",
+    "id": 103640472,
+    "number": 62,
+    "title": "python代码：sqlalchemy+MySQL-python-1.2.5通过atlas访问mysql报错",
+    "user": {
+      "login": "pengfeicui",
+      "id": 4527728,
+      "avatar_url": "https://avatars.githubusercontent.com/u/4527728?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/pengfeicui",
+      "html_url": "https://github.com/pengfeicui",
+      "followers_url": "https://api.github.com/users/pengfeicui/followers",
+      "following_url": "https://api.github.com/users/pengfeicui/following{/other_user}",
+      "gists_url": "https://api.github.com/users/pengfeicui/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/pengfeicui/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/pengfeicui/subscriptions",
+      "organizations_url": "https://api.github.com/users/pengfeicui/orgs",
+      "repos_url": "https://api.github.com/users/pengfeicui/repos",
+      "events_url": "https://api.github.com/users/pengfeicui/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/pengfeicui/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-28T03:30:01Z",
+    "updated_at": "2015-08-28T03:30:01Z",
+    "closed_at": null,
+    "body": "版本：\r\npython-2.7.4\r\nSQLAlchemy-0.9.7\r\nAtlas-2.2.1.el6.x86_64\r\n\r\n客户端报错：\r\n  File \"/usr/local/lib/python2.7/site-packages/MySQLdb/__init__.py\", line 81, in Connect\r\n    return Connection(*args, **kwargs)\r\n  File \"/usr/local/lib/python2.7/site-packages/MySQLdb/connections.py\", line 237, in __init__\r\n    self.autocommit(autocommit)\r\n  File \"/usr/local/lib/python2.7/site-packages/MySQLdb/connections.py\", line 243, in autocommit\r\n    _mysql.connection.autocommit(self, on)\r\n_mysql_exceptions.OperationalError: (2013, 'Lost connection to MySQL server during query')\r\n\r\nAtlas报错：\r\n2015-08-28 03:19:32: (critical) proxy-plugin.c.1450: I have no server backend, closing connection\r\n2015-08-28 03:19:32: (critical) network-mysqld.c.1387: plugin_call(CON_STATE_READ_QUERY) failed\r\n\r\n抓包看，看到当客户端发Atlas一条命令：Statement: set autocommit=0    后就会报上面的错误。因为sqlalchemy在连接的时候，默认将autocommit设置为0，应用程序就会报这样的错，可能sqlalchemy的建立连接的接口中不能设置autocommit的值，所以我感觉sqlalchemy就用不了atlas了，但是我的程序大量使用了sqlalchemy。\r\n\r\n当然我也测了一下只用MySQL-python在connect atlas中将autocommit参数设置为1，这样atlas是正常的。\r\n\r\n不知道set autocommit=0是否是导致上述问题的root cause？\r\n\r\n谢谢。"
+  

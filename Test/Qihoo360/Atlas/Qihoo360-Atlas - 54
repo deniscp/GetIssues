@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/Qihoo360/Atlas/issues/54",
+    "labels_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/54/labels{/name}",
+    "comments_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/54/comments",
+    "events_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/54/events",
+    "html_url": "https://github.com/Qihoo360/Atlas/issues/54",
+    "id": 93676906,
+    "number": 54,
+    "title": "慢查及IP透传",
+    "user": {
+      "login": "daihu",
+      "id": 228477,
+      "avatar_url": "https://avatars.githubusercontent.com/u/228477?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/daihu",
+      "html_url": "https://github.com/daihu",
+      "followers_url": "https://api.github.com/users/daihu/followers",
+      "following_url": "https://api.github.com/users/daihu/following{/other_user}",
+      "gists_url": "https://api.github.com/users/daihu/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/daihu/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/daihu/subscriptions",
+      "organizations_url": "https://api.github.com/users/daihu/orgs",
+      "repos_url": "https://api.github.com/users/daihu/repos",
+      "events_url": "https://api.github.com/users/daihu/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/daihu/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-07-08T02:43:52Z",
+    "updated_at": "2015-07-08T02:43:52Z",
+    "closed_at": null,
+    "body": "问题1\r\n目前我遇到如下问题，一是慢查，我设置了，可是无法在日志里面打印出来，配置如下\r\n\r\n#日志存放的路径\r\nlog-path = /usr/local/mysql-proxy/log\r\n\r\n#SQL日志的开关，可设置为OFF、ON、REALTIME，OFF代表不记录SQL日志，ON代表记录SQL日志，REALTIME代表记录SQL日志且实时写入磁盘，默认为OFF\r\nsql-log = OFF\r\n\r\n#慢日志输出设置。当设置了该参数时，则日志只输出执行时间超过sql-log-slow（单位：ms)的日志记录。不设置该参数则输出全部日志。\r\nsql-log-slow = 1000\r\n\r\n问题2\r\n\r\n如何把前端业务IP慢查透传到后端数据库服务器上\r\n"
+  

@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/Qihoo360/Atlas/issues/61",
+    "labels_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/61/labels{/name}",
+    "comments_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/61/comments",
+    "events_url": "https://api.github.com/repos/Qihoo360/Atlas/issues/61/events",
+    "html_url": "https://github.com/Qihoo360/Atlas/issues/61",
+    "id": 103161028,
+    "number": 61,
+    "title": "请问为什么Atlas在做select操作的时候性能降低的最明显",
+    "user": {
+      "login": "zengkun100",
+      "id": 1425708,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1425708?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zengkun100",
+      "html_url": "https://github.com/zengkun100",
+      "followers_url": "https://api.github.com/users/zengkun100/followers",
+      "following_url": "https://api.github.com/users/zengkun100/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zengkun100/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zengkun100/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zengkun100/subscriptions",
+      "organizations_url": "https://api.github.com/users/zengkun100/orgs",
+      "repos_url": "https://api.github.com/users/zengkun100/repos",
+      "events_url": "https://api.github.com/users/zengkun100/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zengkun100/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-26T03:02:13Z",
+    "updated_at": "2015-08-26T03:02:13Z",
+    "closed_at": null,
+    "body": "看过Atlas的性能测试报告，里面提到select操作的性能大概只有直连时的60%左右。而update，insert等操作的性能大概能到直连的80%。\r\n\r\n为什么Atlas在做select操作的时候性能降低的最明显呢？\r\n\r\n我们的业务会有大量的读场景，如果select操作下降的这么明显，对我们的部署影响较大"
+  

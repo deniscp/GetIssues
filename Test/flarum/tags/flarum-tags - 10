@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/flarum/tags/issues/10",
+    "labels_url": "https://api.github.com/repos/flarum/tags/issues/10/labels{/name}",
+    "comments_url": "https://api.github.com/repos/flarum/tags/issues/10/comments",
+    "events_url": "https://api.github.com/repos/flarum/tags/issues/10/events",
+    "html_url": "https://github.com/flarum/tags/issues/10",
+    "id": 99332951,
+    "number": 10,
+    "title": "Truncate long tag labels",
+    "user": {
+      "login": "tobscure",
+      "id": 128862,
+      "avatar_url": "https://avatars.githubusercontent.com/u/128862?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tobscure",
+      "html_url": "https://github.com/tobscure",
+      "followers_url": "https://api.github.com/users/tobscure/followers",
+      "following_url": "https://api.github.com/users/tobscure/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tobscure/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tobscure/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tobscure/subscriptions",
+      "organizations_url": "https://api.github.com/users/tobscure/orgs",
+      "repos_url": "https://api.github.com/users/tobscure/repos",
+      "events_url": "https://api.github.com/users/tobscure/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tobscure/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2015-08-06T01:31:48Z",
+    "updated_at": "2015-08-27T17:42:11Z",
+    "closed_at": null,
+    "body": "On mobile, having too many tags pushes the \"last reply\" info off the screen. Even on desktop, too many tags and a long discussion title can overlap. We should limit the discussion list to displaying 3 tags.\r\n\r\nWhat needs to be done:\r\n\r\n* Add a new prop (maybe `count`) to the tagLabels util. If the prop is set, splice the tags beyond that number off.\r\n* Make use of that prop in the addTagLabels initializer when extending the DiscussionListItem's infoItems.\r\n* Add some padding to the DiscussionListItem title so it's less likely to overlap tags."
+  

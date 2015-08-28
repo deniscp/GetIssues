@@ -1,0 +1,41 @@
+
+    "url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/9",
+    "labels_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/9/labels{/name}",
+    "comments_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/9/comments",
+    "events_url": "https://api.github.com/repos/michaeldfallen/git-radar/issues/9/events",
+    "html_url": "https://github.com/michaeldfallen/git-radar/issues/9",
+    "id": 103255305,
+    "number": 9,
+    "title": "Make it faster using builtins",
+    "user": {
+      "login": "jart",
+      "id": 49262,
+      "avatar_url": "https://avatars.githubusercontent.com/u/49262?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jart",
+      "html_url": "https://github.com/jart",
+      "followers_url": "https://api.github.com/users/jart/followers",
+      "following_url": "https://api.github.com/users/jart/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jart/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jart/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jart/subscriptions",
+      "organizations_url": "https://api.github.com/users/jart/orgs",
+      "repos_url": "https://api.github.com/users/jart/repos",
+      "events_url": "https://api.github.com/users/jart/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jart/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "locked": false,
+    "assignee": null,
+    "milestone": null,
+    "comments": 5,
+    "created_at": "2015-08-26T12:29:34Z",
+    "updated_at": "2015-08-27T15:16:47Z",
+    "closed_at": null,
+    "body": "Nice `PS1` hack. This is definitely the fanciest one I've seen for git. So I want to help you improve it.\r\n\r\nMy question is this: do blank lines appear in the terminal if you hold down the enter key? That means the time to optimize is *now*. The name of the game is to drive down latency so that never happens.\r\n\r\nHere's some code I wrote for mine own `.bashrc` file that you can use. It uses bash builtins to determine the git root and the current branch. This way you only need like 5 or so system calls, rather than the 182 you'd need to run the git command: `strace -f git symbolic-ref --short HEAD |& wc -l`\r\n\r\nI've found that this is really helpful not only from the user experience standpoint (fast is better than slow) but also in situations where IO gets pwnd or you run out of processes. git might not run at all and you need builtins to save the system.\r\n\r\nThe only tradeoff with these functions is that it leaves garbage files behind in `/tmp`. It's assumed that a cron job exists to purge those occasionally. `/etc/cron.daily/tmpreaper` comes standard on Debian systems.\r\n\r\n```bash\r\n# Caches last directory for which `jartps1_gitdir_find` failed.\r\nexport JARTPS1_GITDIR_TMP=\"$(mktemp --suffix=-jartps1-gitdir)\"\r\n\r\n################################################################################\r\n# Swiftly determine name of current Git branch.\r\n#\r\n# Arguments:\r\n#   None\r\n# Returns:\r\n#   0 on success, storing result to ${jartps1_gitbranch}.\r\n#   1 if ${PWD} isn't inside a Git repo.\r\n# Globals:\r\n#   jartps1_gitbranch      - Used to store result.\r\n################################################################################\r\njartps1_gitbranch_find() {\r\n  if jartps1_gitdir_find; then\r\n    local head\r\n    if read head <\"${jartps1_gitdir}/.git/HEAD\" &>/dev/null; then\r\n      if [[ \"${head}\" =~ refs/heads/(.+) ]]; then\r\n        jartps1_gitbranch=\"${BASH_REMATCH[1]}\"\r\n      else\r\n        jartps1_gitbranch=\"${head##*/}\"\r\n      fi\r\n      if [[ \"${jartps1_gitbranch}\" != \"\" ]]; then\r\n        return 0\r\n      fi\r\n    fi\r\n  fi\r\n  return 1\r\n}\r\n\r\n################################################################################\r\n# Swiftly locate root of current Git repository.\r\n#\r\n# This is the fastest possible solution. Rather than the naïve approach of\r\n# executing the git command (which could take hundreds of milliseconds), this\r\n# routine launches no processes and only requires a few stat() system calls. In\r\n# some cases it can avoid lookup or cache the result.\r\n#\r\n# Arguments:\r\n#   dir                 - Optional, defaults to ${PWD}\r\n# Returns:\r\n#   0 on success, storing result to ${jartps1_gitdir}.\r\n#   1 if dir isn't inside a Git repo.\r\n# Globals:\r\n#   jartps1_gitdir      - Used to store result.\r\n#   JARTPS1_GITDIR_TMP  - Temp file used to cache last failed search.\r\n################################################################################\r\njartps1_gitdir_find() {\r\n  local dir=\"$1\"\r\n  if [[ -z \"${dir}\" ]]; then\r\n    dir=\"${PWD}\"\r\n    case \"${dir}\" in\r\n      /)                              return 1 ;;\r\n      /home/${USER})                  return 1 ;;\r\n    esac\r\n    if [[ -f \"${JARTPS1_GITDIR_TMP}\" ]]; then\r\n      local notgit\r\n      if read notgit <\"${JARTPS1_GITDIR_TMP}\" &>/dev/null; then\r\n        if [[ \"${dir}\" == \"${notgit}\" ]]; then\r\n          return 1\r\n        fi\r\n      fi\r\n    fi\r\n  fi\r\n  if [[ -d \"${dir}/.git\" ]]; then\r\n    jartps1_gitdir=\"${dir}\"\r\n  else\r\n    local parent=\"${dir%/*}\"\r\n    if [[ -z \"${parent}\" ]]; then\r\n      printf \"%s\" \"$PWD\" >\"${JARTPS1_GITDIR_TMP}\"\r\n      return 1\r\n    fi\r\n    jartps1_gitdir_find \"${parent}\"\r\n  fi\r\n}\r\n```"
+  
